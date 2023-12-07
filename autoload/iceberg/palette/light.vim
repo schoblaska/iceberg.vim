@@ -55,6 +55,13 @@ function! iceberg#palette#light#create() abort
         \   'lightness': -0.20,
         \ })
 
+  " float
+  let g.float_bg = pgmnt#color#adjust_color(
+        \ g.normal_bg, {
+        \   'saturation': +0.05,
+        \   'lightness': +0.05,
+        \ })
+
   " diff
   let g.difftext_bg = pgmnt#color#mix(g.lblue, g.normal_bg, 0.35)
   let g.difftext_fg = g.normal_fg
@@ -175,6 +182,9 @@ function! iceberg#palette#light#create() abort
   let c.linenr_fg = 248
   let c.cursorlinenr_bg = 251
   let c.cursorlinenr_fg = 237
+
+  " float
+  let c.float_bg = 253
 
   " diff
   let c.difftext_bg = 73

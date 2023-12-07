@@ -643,6 +643,21 @@ function! s:create_colors(palette) abort
   "
 
   call extend(rules, pgmnt#hi#group(
+        \ ['NormalFloat'], {
+        \   'ctermbg': c.float_bg,
+        \   'guibg': g.float_bg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['FloatBorder'], {
+        \   'ctermfg': c.linenr_fg,
+        \   'guifg': g.linenr_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ '@symbol', {
+        \   'ctermfg': c.green,
+        \   'guifg': g.green,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
         \ ['IndentBlanklineIndent1'], {
         \   'ctermfg': c.whitespace_fg,
         \   'guifg': g.whitespace_fg,
@@ -651,11 +666,6 @@ function! s:create_colors(palette) abort
         \ 'IndentBlanklineContextChar', {
         \   'ctermfg': c.linenr_fg,
         \   'guifg': g.linenr_fg,
-        \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ '@symbol', {
-        \   'ctermfg': c.green,
-        \   'guifg': g.green,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'HlSearchLens', {

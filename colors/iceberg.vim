@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 14:14-0600
+" Modified:   2023-12-07 14:40-0600
 " License:    MIT
 
 
@@ -133,9 +133,11 @@ if &background == 'light'
   hi DiagnosticSignError ctermbg=254 ctermfg=125 guibg=#e8e9ec guifg=#cc517a
   hi DiagnosticFloatingHint ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#33374c
   hi icebergALAccentRed ctermfg=125 guifg=#cc517a
+  hi NormalFloat ctermbg=253 guibg=#f5f6f7
+  hi FloatBorder ctermfg=248 guifg=#9fa7bd
+  hi @symbol ctermfg=64 guifg=#668e3d
   hi IndentBlanklineIndent1 ctermfg=251 guifg=#cbcfda
   hi IndentBlanklineContextChar ctermfg=248 guifg=#9fa7bd
-  hi @symbol ctermfg=64 guifg=#668e3d
   hi HlSearchLens ctermfg=31 guifg=#3f83a6
   hi HlSearchLensNear ctermfg=180 guifg=#eac6ad
 
@@ -272,9 +274,11 @@ else
   hi DiagnosticSignError ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
   hi DiagnosticFloatingHint ctermbg=236 ctermfg=251 guibg=#3d425b guifg=#c6c8d1
   hi icebergALAccentRed ctermfg=203 guifg=#e27878
+  hi NormalFloat ctermbg=235 guibg=#12141c
+  hi FloatBorder ctermfg=239 guifg=#444b71
+  hi @symbol ctermfg=150 guifg=#b4be82
   hi IndentBlanklineIndent1 ctermfg=236 guifg=#242940
   hi IndentBlanklineContextChar ctermfg=239 guifg=#444b71
-  hi @symbol ctermfg=150 guifg=#b4be82
   hi HlSearchLens ctermfg=109 guifg=#89b8c2
   hi HlSearchLensNear ctermfg=216 guifg=#e4aa80
 
