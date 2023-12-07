@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 14:58-0600
+" Modified:   2023-12-07 16:39-0600
 " License:    MIT
 
 
@@ -135,6 +135,8 @@ if &background == 'light'
   hi icebergALAccentRed ctermfg=125 guifg=#cc517a
   hi NormalFloat ctermbg=253 guibg=#f5f6f7
   hi FloatBorder ctermfg=248 guifg=#9fa7bd
+  hi LualineEmpty ctermbg=254 ctermfg=254 guibg=#e8e9ec guifg=#e8e9ec
+  hi LualineWinbarFilename ctermbg=253 ctermfg=237 gui=italic guibg=#f5f6f7 guifg=#33374c
   hi TreesitterContextLineNumber ctermbg=253 ctermfg=248 guibg=#f5f6f7 guifg=#9fa7bd
   hi TreesitterContextSeparator ctermbg=253 ctermfg=248 guibg=#f5f6f7 guifg=#9fa7bd
   hi @symbol ctermfg=64 guifg=#668e3d
@@ -278,6 +280,8 @@ else
   hi icebergALAccentRed ctermfg=203 guifg=#e27878
   hi NormalFloat ctermbg=235 guibg=#12141c
   hi FloatBorder ctermfg=239 guifg=#444b71
+  hi LualineEmpty ctermbg=234 ctermfg=234 guibg=#161821 guifg=#161821
+  hi LualineWinbarFilename ctermbg=235 ctermfg=252 gui=italic guibg=#12141c guifg=#c6c8d1
   hi TreesitterContextLineNumber ctermbg=235 ctermfg=239 guibg=#12141c guifg=#444b71
   hi TreesitterContextSeparator ctermbg=235 ctermfg=239 guibg=#12141c guifg=#444b71
   hi @symbol ctermfg=150 guifg=#b4be82
@@ -471,6 +475,34 @@ hi! link HlSearchNear IncSearch
 hi! link @type.tsx Special
 hi! link @lsp.type.interface.typescriptreact @symbol
 hi! link TabLineSeparatorSel @symbol
+hi! link NavicIconsFile Directory
+hi! link NavicIconsModule @namespace
+hi! link NavicIconsNamespace @namespace
+hi! link NavicIconsPackage @namespace
+hi! link NavicIconsClass Type
+hi! link NavicIconsMethod Function
+hi! link NavicIconsProperty @property
+hi! link NavicIconsField @field
+hi! link NavicIconsConstructor Function
+hi! link NavicIconsEnum Constant
+hi! link NavicIconsInterface Constant
+hi! link NavicIconsFunction Function
+hi! link NavicIconsVariable @variable
+hi! link NavicIconsConstant Constant
+hi! link NavicIconsString String
+hi! link NavicIconsNumber Number
+hi! link NavicIconsBoolean Boolean
+hi! link NavicIconsArray @symbol
+hi! link NavicIconsObject @namespace
+hi! link NavicIconsKey Identifier
+hi! link NavicIconsNull Type
+hi! link NavicIconsEnumMember @field
+hi! link NavicIconsStruct Type
+hi! link NavicIconsEvent Constant
+hi! link NavicIconsOperator Operator
+hi! link NavicIconsTypeParameter @field
+hi! link NavicText Normal
+hi! link NavicSeparator Comment
 
 if has('nvim-0.8')
   hi! link @attribute TSAttribute

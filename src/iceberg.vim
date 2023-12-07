@@ -653,6 +653,21 @@ function! s:create_colors(palette) abort
         \   'guifg': g.linenr_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
+        \ ['LualineEmpty'], {
+        \   'ctermbg': c.normal_bg,
+        \   'ctermfg': c.normal_bg,
+        \   'guibg': g.normal_bg,
+        \   'guifg': g.normal_bg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['LualineWinbarFilename'], {
+        \   'ctermbg': c.float_bg,
+        \   'ctermfg': c.normal_fg,
+        \   'gui': 'italic',
+        \   'guibg': g.float_bg,
+        \   'guifg': g.normal_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
         \ ['TreesitterContextLineNumber'], {
         \   'ctermbg': c.float_bg,
         \   'ctermfg': c.linenr_fg,
@@ -948,6 +963,35 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('@type.tsx', 'Special'))
   call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
   call add(links, pgmnt#hi#link('TabLineSeparatorSel', '@symbol'))
+
+  call add(links, pgmnt#hi#link("NavicIconsFile", "Directory"))
+  call add(links, pgmnt#hi#link("NavicIconsModule", "@namespace"))
+  call add(links, pgmnt#hi#link("NavicIconsNamespace", "@namespace"))
+  call add(links, pgmnt#hi#link("NavicIconsPackage", "@namespace"))
+  call add(links, pgmnt#hi#link("NavicIconsClass", "Type"))
+  call add(links, pgmnt#hi#link("NavicIconsMethod", "Function"))
+  call add(links, pgmnt#hi#link("NavicIconsProperty", "@property"))
+  call add(links, pgmnt#hi#link("NavicIconsField", "@field"))
+  call add(links, pgmnt#hi#link("NavicIconsConstructor", "Function"))
+  call add(links, pgmnt#hi#link("NavicIconsEnum", "Constant"))
+  call add(links, pgmnt#hi#link("NavicIconsInterface", "Constant"))
+  call add(links, pgmnt#hi#link("NavicIconsFunction", "Function"))
+  call add(links, pgmnt#hi#link("NavicIconsVariable", "@variable"))
+  call add(links, pgmnt#hi#link("NavicIconsConstant", "Constant"))
+  call add(links, pgmnt#hi#link("NavicIconsString", "String"))
+  call add(links, pgmnt#hi#link("NavicIconsNumber", "Number"))
+  call add(links, pgmnt#hi#link("NavicIconsBoolean", "Boolean"))
+  call add(links, pgmnt#hi#link("NavicIconsArray", "@symbol"))
+  call add(links, pgmnt#hi#link("NavicIconsObject", "@namespace"))
+  call add(links, pgmnt#hi#link("NavicIconsKey", "Identifier"))
+  call add(links, pgmnt#hi#link("NavicIconsNull", "Type"))
+  call add(links, pgmnt#hi#link("NavicIconsEnumMember", "@field"))
+  call add(links, pgmnt#hi#link("NavicIconsStruct", "Type"))
+  call add(links, pgmnt#hi#link("NavicIconsEvent", "Constant"))
+  call add(links, pgmnt#hi#link("NavicIconsOperator", "Operator"))
+  call add(links, pgmnt#hi#link("NavicIconsTypeParameter", "@field"))
+  call add(links, pgmnt#hi#link("NavicText", "Normal"))
+  call add(links, pgmnt#hi#link("NavicSeparator", "Comment"))
 
   "
   " end custom links
