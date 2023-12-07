@@ -391,10 +391,8 @@ function! s:create_colors(palette) abort
   call extend(rules, pgmnt#hi#group(
         \ 'VertSplit', {
         \   'cterm': 'NONE',
-        \   'ctermbg': c.statuslinenc_bg,
         \   'ctermfg': c.statuslinenc_bg,
         \   'gui': 'NONE',
-        \   'guibg': g.statuslinenc_bg,
         \   'guifg': g.statuslinenc_bg,
         \ }))
   call extend(rules, pgmnt#hi#group(
@@ -641,6 +639,25 @@ function! s:create_colors(palette) abort
         \ }))
   " }}}
 
+  "
+  " schoblaska/iceberg.vim custom rules
+  "
+
+  call extend(rules, pgmnt#hi#group(
+        \ ['IndentBlanklineIndent1'], {
+        \   'ctermfg': c.whitespace_fg,
+        \   'guifg': g.whitespace_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'IndentBlanklineContextChar', {
+        \   'ctermfg': c.linenr_fg,
+        \   'guifg': g.linenr_fg,
+        \ }))
+
+  "
+  " end custom rules
+  "
+
   let quoted_term_colors = map(
         \ copy(g.term_colors),
         \ '"''" . v:val . "''"')
@@ -883,6 +900,16 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('typescriptNull', 'Constant'))
   call add(links, pgmnt#hi#link('typescriptParens', 'icebergNormalFg'))
   " }}}
+
+  "
+  " schoblaska/iceberg.vim custom links
+  "
+
+  call add(links, pgmnt#hi#link('WinSeparator', 'VertSplit'))
+
+  "
+  " end custom links
+  "
 
   return links
 endfunction

@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2022-11-16 22:13+0900
+" Modified:   2023-12-07 12:45-0600
 " License:    MIT
 
 
@@ -29,7 +29,7 @@ if &background == 'light'
   hi Conceal ctermbg=254 ctermfg=244 guibg=#e8e9ec guifg=#8389a3
   hi Constant ctermfg=97 guifg=#7759b4
   hi Cursor ctermbg=237 ctermfg=254 guibg=#33374c guifg=#e8e9ec
-  hi CursorLineNr cterm=NONE ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#576a9e
+  hi cursorlinenr cterm=none ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#576a9e
   hi Delimiter ctermfg=237 guifg=#33374c
   hi DiffAdd ctermbg=79 ctermfg=23 guibg=#d4dbd1 guifg=#475946
   hi DiffChange ctermbg=116 ctermfg=24 guibg=#ced9e1 guifg=#375570
@@ -85,7 +85,7 @@ if &background == 'light'
   hi Todo ctermbg=254 ctermfg=64 guibg=#d4dbd1 guifg=#668e3d
   hi Type ctermfg=25 gui=NONE guifg=#2d539e
   hi Underlined cterm=underline ctermfg=25 gui=underline guifg=#2d539e term=underline
-  hi VertSplit cterm=NONE ctermbg=251 ctermfg=251 gui=NONE guibg=#cad0de guifg=#cad0de
+  hi VertSplit cterm=NONE ctermfg=251 gui=NONE guifg=#cad0de
   hi Visual ctermbg=251 ctermfg=NONE guibg=#c9cdd7 guifg=NONE
   hi VisualNOS ctermbg=251 ctermfg=NONE guibg=#c9cdd7 guifg=NONE
   hi WildMenu ctermbg=235 ctermfg=252 guibg=#32364c guifg=#e8e9ec
@@ -133,6 +133,8 @@ if &background == 'light'
   hi DiagnosticSignError ctermbg=253 ctermfg=125 guibg=#dcdfe7 guifg=#cc517a
   hi DiagnosticFloatingHint ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#33374c
   hi icebergALAccentRed ctermfg=125 guifg=#cc517a
+  hi IndentBlanklineIndent1 ctermfg=251 guifg=#cbcfda
+  hi IndentBlanklineContextChar ctermfg=248 guifg=#9fa7bd
 
   if has('nvim')
     let g:terminal_color_0 = '#dcdfe7'
@@ -163,7 +165,7 @@ else
   hi Conceal ctermbg=234 ctermfg=242 guibg=#161821 guifg=#6b7089
   hi Constant ctermfg=140 guifg=#a093c7
   hi Cursor ctermbg=252 ctermfg=234 guibg=#c6c8d1 guifg=#161821
-  hi CursorLineNr cterm=NONE ctermbg=237 ctermfg=253 guibg=#2a3158 guifg=#cdd1e6
+  hi cursorlinenr cterm=none ctermbg=237 ctermfg=253 guibg=#2a3158 guifg=#cdd1e6
   hi Delimiter ctermfg=252 guifg=#c6c8d1
   hi DiffAdd ctermbg=29 ctermfg=158 guibg=#45493e guifg=#c0c5b9
   hi DiffChange ctermbg=23 ctermfg=159 guibg=#384851 guifg=#b3c3cc
@@ -219,7 +221,7 @@ else
   hi Todo ctermbg=234 ctermfg=150 guibg=#45493e guifg=#b4be82
   hi Type ctermfg=110 gui=NONE guifg=#84a0c6
   hi Underlined cterm=underline ctermfg=110 gui=underline guifg=#84a0c6 term=underline
-  hi VertSplit cterm=NONE ctermbg=233 ctermfg=233 gui=NONE guibg=#0f1117 guifg=#0f1117
+  hi VertSplit cterm=NONE ctermfg=233 gui=NONE guifg=#0f1117
   hi Visual ctermbg=236 ctermfg=NONE guibg=#272c42 guifg=NONE
   hi VisualNOS ctermbg=236 ctermfg=NONE guibg=#272c42 guifg=NONE
   hi WildMenu ctermbg=255 ctermfg=234 guibg=#d4d5db guifg=#17171b
@@ -267,6 +269,8 @@ else
   hi DiagnosticSignError ctermbg=235 ctermfg=203 guibg=#1e2132 guifg=#e27878
   hi DiagnosticFloatingHint ctermbg=236 ctermfg=251 guibg=#3d425b guifg=#c6c8d1
   hi icebergALAccentRed ctermfg=203 guifg=#e27878
+  hi IndentBlanklineIndent1 ctermfg=236 guifg=#242940
+  hi IndentBlanklineContextChar ctermfg=239 guifg=#444b71
 
   if has('nvim')
     let g:terminal_color_0 = '#1e2132'
@@ -448,6 +452,7 @@ hi! link typescriptIdentifier Statement
 hi! link typescriptMessage icebergNormalFg
 hi! link typescriptNull Constant
 hi! link typescriptParens icebergNormalFg
+hi! link WinSeparator VertSplit
 
 if has('nvim-0.8')
   hi! link @attribute TSAttribute
