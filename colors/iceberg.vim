@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 14:55-0600
+" Modified:   2023-12-07 14:58-0600
 " License:    MIT
 
 
@@ -470,6 +470,7 @@ hi! link WinSeparator VertSplit
 hi! link HlSearchNear IncSearch
 hi! link @type.tsx Special
 hi! link @lsp.type.interface.typescriptreact @symbol
+hi! link TabLineSeparatorSel @symbol
 
 if has('nvim-0.8')
   hi! link @attribute TSAttribute
