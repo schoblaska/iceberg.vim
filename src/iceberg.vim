@@ -247,8 +247,8 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Special', {
-        \   'ctermfg': c.green,
-        \   'guifg': g.green,
+        \   'ctermfg': c.search_bg,
+        \   'guifg': g.search_bg,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'SpecialKey', {
@@ -652,6 +652,11 @@ function! s:create_colors(palette) abort
         \ 'IndentBlanklineContextChar', {
         \   'ctermfg': c.linenr_fg,
         \   'guifg': g.linenr_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ '@symbol', {
+        \   'ctermfg': c.green,
+        \   'guifg': g.green,
         \ }))
 
   "

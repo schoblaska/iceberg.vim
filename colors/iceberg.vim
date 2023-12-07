@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 12:45-0600
+" Modified:   2023-12-07 13:01-0600
 " License:    MIT
 
 
@@ -29,7 +29,7 @@ if &background == 'light'
   hi Conceal ctermbg=254 ctermfg=244 guibg=#e8e9ec guifg=#8389a3
   hi Constant ctermfg=97 guifg=#7759b4
   hi Cursor ctermbg=237 ctermfg=254 guibg=#33374c guifg=#e8e9ec
-  hi cursorlinenr cterm=none ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#576a9e
+  hi CursorLineNr cterm=NONE ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#576a9e
   hi Delimiter ctermfg=237 guifg=#33374c
   hi DiffAdd ctermbg=79 ctermfg=23 guibg=#d4dbd1 guifg=#475946
   hi DiffChange ctermbg=116 ctermfg=24 guibg=#ced9e1 guifg=#375570
@@ -63,7 +63,7 @@ if &background == 'light'
   hi QuickFixLine ctermbg=251 ctermfg=237 guibg=#c9cdd7 guifg=#33374c
   hi Search ctermbg=180 ctermfg=94 guibg=#eac6ad guifg=#85512c
   hi SignColumn ctermbg=253 ctermfg=248 guibg=#dcdfe7 guifg=#9fa7bd
-  hi Special ctermfg=64 guifg=#668e3d
+  hi Special ctermfg=180 guifg=#eac6ad
   hi SpecialKey ctermfg=248 guifg=#a5b0d3
   hi SpellBad ctermbg=181 ctermfg=237 gui=undercurl guifg=NONE guisp=#cc517a
   hi SpellCap ctermbg=117 ctermfg=237 gui=undercurl guifg=NONE guisp=#2d539e
@@ -135,6 +135,7 @@ if &background == 'light'
   hi icebergALAccentRed ctermfg=125 guifg=#cc517a
   hi IndentBlanklineIndent1 ctermfg=251 guifg=#cbcfda
   hi IndentBlanklineContextChar ctermfg=248 guifg=#9fa7bd
+  hi @symbol ctermfg=64 guifg=#668e3d
 
   if has('nvim')
     let g:terminal_color_0 = '#dcdfe7'
@@ -165,7 +166,7 @@ else
   hi Conceal ctermbg=234 ctermfg=242 guibg=#161821 guifg=#6b7089
   hi Constant ctermfg=140 guifg=#a093c7
   hi Cursor ctermbg=252 ctermfg=234 guibg=#c6c8d1 guifg=#161821
-  hi cursorlinenr cterm=none ctermbg=237 ctermfg=253 guibg=#2a3158 guifg=#cdd1e6
+  hi CursorLineNr cterm=NONE ctermbg=237 ctermfg=253 guibg=#2a3158 guifg=#cdd1e6
   hi Delimiter ctermfg=252 guifg=#c6c8d1
   hi DiffAdd ctermbg=29 ctermfg=158 guibg=#45493e guifg=#c0c5b9
   hi DiffChange ctermbg=23 ctermfg=159 guibg=#384851 guifg=#b3c3cc
@@ -199,7 +200,7 @@ else
   hi QuickFixLine ctermbg=236 ctermfg=252 guibg=#272c42 guifg=#c6c8d1
   hi Search ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
   hi SignColumn ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
-  hi Special ctermfg=150 guifg=#b4be82
+  hi Special ctermfg=216 guifg=#e4aa80
   hi SpecialKey ctermfg=240 guifg=#515e97
   hi SpellBad ctermbg=95 ctermfg=252 gui=undercurl guifg=NONE guisp=#e27878
   hi SpellCap ctermbg=24 ctermfg=252 gui=undercurl guifg=NONE guisp=#84a0c6
@@ -271,6 +272,7 @@ else
   hi icebergALAccentRed ctermfg=203 guifg=#e27878
   hi IndentBlanklineIndent1 ctermfg=236 guifg=#242940
   hi IndentBlanklineContextChar ctermfg=239 guifg=#444b71
+  hi @symbol ctermfg=150 guifg=#b4be82
 
   if has('nvim')
     let g:terminal_color_0 = '#1e2132'
