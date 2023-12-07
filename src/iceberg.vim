@@ -151,11 +151,10 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'IncSearch', {
-        \   'cterm': 'reverse',
-        \   'ctermfg': 'NONE',
-        \   'gui': 'reverse',
-        \   'guifg': 'NONE',
-        \   'term': 'reverse',
+        \   'ctermbg': c.search_bg,
+        \   'ctermfg': c.search_fg,
+        \   'guibg': g.search_bg,
+        \   'guifg': g.search_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'LineNr', {
@@ -233,9 +232,9 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Search', {
-        \   'ctermbg': c.search_bg,
+        \   'ctermbg': c.lblue,
         \   'ctermfg': c.search_fg,
-        \   'guibg': g.search_bg,
+        \   'guibg': g.lblue,
         \   'guifg': g.search_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
@@ -658,6 +657,16 @@ function! s:create_colors(palette) abort
         \   'ctermfg': c.green,
         \   'guifg': g.green,
         \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'HlSearchLens', {
+        \   'ctermfg': c.lblue,
+        \   'guifg': g.lblue,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'HlSearchLensNear', {
+        \   'ctermfg': c.search_bg,
+        \   'guifg': g.search_bg,
+        \ }))
 
   "
   " end custom rules
@@ -911,6 +920,9 @@ function! s:create_links() abort
   "
 
   call add(links, pgmnt#hi#link('WinSeparator', 'VertSplit'))
+  call add(links, pgmnt#hi#link('HlSearchNear', 'IncSearch'))
+  call add(links, pgmnt#hi#link('@type.tsx', 'Special'))
+  call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
 
   "
   " end custom links

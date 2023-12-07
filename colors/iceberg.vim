@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 13:01-0600
+" Modified:   2023-12-07 14:09-0600
 " License:    MIT
 
 
@@ -48,7 +48,7 @@ if &background == 'light'
   hi Identifier cterm=NONE ctermfg=31 guifg=#3f83a6
   hi Ignore ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
   hi Include ctermfg=25 guifg=#2d539e
-  hi IncSearch cterm=reverse ctermfg=NONE gui=reverse guifg=NONE term=reverse
+  hi IncSearch ctermbg=180 ctermfg=94 guibg=#eac6ad guifg=#85512c
   hi LineNr ctermbg=253 ctermfg=248 guibg=#dcdfe7 guifg=#9fa7bd
   hi MatchParen ctermbg=250 ctermfg=0 guibg=#bec0c9 guifg=#33374c
   hi ModeMsg ctermfg=244 guifg=#8389a3
@@ -61,7 +61,7 @@ if &background == 'light'
   hi PreProc ctermfg=64 guifg=#668e3d
   hi Question ctermfg=64 guifg=#668e3d
   hi QuickFixLine ctermbg=251 ctermfg=237 guibg=#c9cdd7 guifg=#33374c
-  hi Search ctermbg=180 ctermfg=94 guibg=#eac6ad guifg=#85512c
+  hi Search ctermbg=31 ctermfg=94 guibg=#3f83a6 guifg=#85512c
   hi SignColumn ctermbg=253 ctermfg=248 guibg=#dcdfe7 guifg=#9fa7bd
   hi Special ctermfg=180 guifg=#eac6ad
   hi SpecialKey ctermfg=248 guifg=#a5b0d3
@@ -136,6 +136,8 @@ if &background == 'light'
   hi IndentBlanklineIndent1 ctermfg=251 guifg=#cbcfda
   hi IndentBlanklineContextChar ctermfg=248 guifg=#9fa7bd
   hi @symbol ctermfg=64 guifg=#668e3d
+  hi HlSearchLens ctermfg=31 guifg=#3f83a6
+  hi HlSearchLensNear ctermfg=180 guifg=#eac6ad
 
   if has('nvim')
     let g:terminal_color_0 = '#dcdfe7'
@@ -185,7 +187,7 @@ else
   hi Identifier cterm=NONE ctermfg=109 guifg=#89b8c2
   hi Ignore ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
   hi Include ctermfg=110 guifg=#84a0c6
-  hi IncSearch cterm=reverse ctermfg=NONE gui=reverse guifg=NONE term=reverse
+  hi IncSearch ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
   hi LineNr ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
   hi MatchParen ctermbg=237 ctermfg=255 guibg=#3e445e guifg=#ffffff
   hi ModeMsg ctermfg=242 guifg=#6b7089
@@ -198,7 +200,7 @@ else
   hi PreProc ctermfg=150 guifg=#b4be82
   hi Question ctermfg=150 guifg=#b4be82
   hi QuickFixLine ctermbg=236 ctermfg=252 guibg=#272c42 guifg=#c6c8d1
-  hi Search ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
+  hi Search ctermbg=109 ctermfg=234 guibg=#89b8c2 guifg=#392313
   hi SignColumn ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
   hi Special ctermfg=216 guifg=#e4aa80
   hi SpecialKey ctermfg=240 guifg=#515e97
@@ -273,6 +275,8 @@ else
   hi IndentBlanklineIndent1 ctermfg=236 guifg=#242940
   hi IndentBlanklineContextChar ctermfg=239 guifg=#444b71
   hi @symbol ctermfg=150 guifg=#b4be82
+  hi HlSearchLens ctermfg=109 guifg=#89b8c2
+  hi HlSearchLensNear ctermfg=216 guifg=#e4aa80
 
   if has('nvim')
     let g:terminal_color_0 = '#1e2132'
@@ -455,6 +459,9 @@ hi! link typescriptMessage icebergNormalFg
 hi! link typescriptNull Constant
 hi! link typescriptParens icebergNormalFg
 hi! link WinSeparator VertSplit
+hi! link HlSearchNear IncSearch
+hi! link @type.tsx Special
+hi! link @lsp.type.interface.typescriptreact @symbol
 
 if has('nvim-0.8')
   hi! link @attribute TSAttribute
