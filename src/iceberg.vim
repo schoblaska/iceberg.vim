@@ -121,9 +121,9 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'FoldColumn', {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.linenr_fg,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.linenr_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
@@ -158,9 +158,9 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'LineNr', {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.linenr_fg,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.linenr_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
@@ -239,9 +239,9 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'SignColumn', {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.linenr_fg,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.linenr_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
@@ -443,16 +443,16 @@ function! s:create_colors(palette) abort
   " [ALE](https://github.com/w0rp/ale)
   call extend(rules, pgmnt#hi#group(
         \ 'ALEErrorSign', {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.red,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.red,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'ALEWarningSign', {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.orange,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.orange,
         \ }))
   call extend(rules, pgmnt#hi#group(
@@ -495,39 +495,39 @@ function! s:create_colors(palette) abort
   " [Git Gutter](https://github.com/airblade/vim-gitgutter)
   call extend(rules, pgmnt#hi#group(
         \ 'GitGutterAdd', {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.green,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.green,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ ['GitGutterChange', 'GitGutterChangeDelete'], {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.lblue,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.lblue,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'GitGutterDelete', {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.red,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.red,
         \ }))
 
   " [git-messenger.vim](https://github.com/rhysd/git-messenger.vim)
   call extend(rules, pgmnt#hi#group(
         \ 'gitmessengerEndOfBuffer', {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.linenr_fg,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.linenr_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'gitmessengerPopupNormal', {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.normal_fg,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.normal_fg,
         \ }))
 
@@ -550,16 +550,16 @@ function! s:create_colors(palette) abort
   " [Syntastic](http://github.com/vim-syntastic/syntastic)
   call extend(rules, pgmnt#hi#group(
         \ ['SyntasticErrorSign', 'SyntasticStyleErrorSign'], {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.red,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.red,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ ['SyntasticStyleWarningSign', 'SyntasticWarningSign'], {
-        \   'ctermbg': c.linenr_bg,
+        \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.orange,
-        \   'guibg': g.linenr_bg,
+        \   'guibg': g.normal_bg,
         \   'guifg': g.orange,
         \ }))
 
@@ -613,9 +613,9 @@ function! s:create_colors(palette) abort
           \ }))
     call extend(rules, pgmnt#hi#group(
           \ 'DiagnosticSign' . group, {
-          \   'ctermbg': c.linenr_bg,
+          \   'ctermbg': c.normal_bg,
           \   'ctermfg': c[color],
-          \   'guibg': g.linenr_bg,
+          \   'guibg': g.normal_bg,
           \   'guifg': g[color],
           \ }))
   endfor

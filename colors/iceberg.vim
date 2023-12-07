@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 14:09-0600
+" Modified:   2023-12-07 14:14-0600
 " License:    MIT
 
 
@@ -43,13 +43,13 @@ if &background == 'light'
   hi NonText ctermfg=251 guifg=#cbcfda
   hi Whitespace ctermfg=251 guifg=#cbcfda
   hi Folded ctermbg=253 ctermfg=243 guibg=#dcdfe7 guifg=#788098
-  hi FoldColumn ctermbg=253 ctermfg=248 guibg=#dcdfe7 guifg=#9fa7bd
+  hi FoldColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
   hi Function ctermfg=25 guifg=#2d539e
   hi Identifier cterm=NONE ctermfg=31 guifg=#3f83a6
   hi Ignore ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
   hi Include ctermfg=25 guifg=#2d539e
   hi IncSearch ctermbg=180 ctermfg=94 guibg=#eac6ad guifg=#85512c
-  hi LineNr ctermbg=253 ctermfg=248 guibg=#dcdfe7 guifg=#9fa7bd
+  hi LineNr ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
   hi MatchParen ctermbg=250 ctermfg=0 guibg=#bec0c9 guifg=#33374c
   hi ModeMsg ctermfg=244 guifg=#8389a3
   hi MoreMsg ctermfg=64 guifg=#668e3d
@@ -62,7 +62,7 @@ if &background == 'light'
   hi Question ctermfg=64 guifg=#668e3d
   hi QuickFixLine ctermbg=251 ctermfg=237 guibg=#c9cdd7 guifg=#33374c
   hi Search ctermbg=31 ctermfg=94 guibg=#3f83a6 guifg=#85512c
-  hi SignColumn ctermbg=253 ctermfg=248 guibg=#dcdfe7 guifg=#9fa7bd
+  hi SignColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
   hi Special ctermfg=180 guifg=#eac6ad
   hi SpecialKey ctermfg=248 guifg=#a5b0d3
   hi SpellBad ctermbg=181 ctermfg=237 gui=undercurl guifg=NONE guisp=#cc517a
@@ -92,8 +92,8 @@ if &background == 'light'
   hi icebergNormalFg ctermfg=237 guifg=#33374c
   hi diffAdded ctermfg=64 guifg=#668e3d
   hi diffRemoved ctermfg=125 guifg=#cc517a
-  hi ALEErrorSign ctermbg=253 ctermfg=125 guibg=#dcdfe7 guifg=#cc517a
-  hi ALEWarningSign ctermbg=253 ctermfg=130 guibg=#dcdfe7 guifg=#c57339
+  hi ALEErrorSign ctermbg=254 ctermfg=125 guibg=#e8e9ec guifg=#cc517a
+  hi ALEWarningSign ctermbg=254 ctermfg=130 guibg=#e8e9ec guifg=#c57339
   hi ALEVirtualTextError ctermfg=125 guifg=#cc517a
   hi ALEVirtualTextWarning ctermfg=130 guifg=#c57339
   hi CtrlPMode1 ctermbg=247 ctermfg=252 guibg=#9fa6c0 guifg=#e8e9ec
@@ -101,18 +101,18 @@ if &background == 'light'
   hi EasyMotionTarget ctermfg=64 guifg=#668e3d
   hi EasyMotionTarget2First ctermfg=130 guifg=#c57339
   hi EasyMotionTarget2Second ctermfg=130 guifg=#c57339
-  hi GitGutterAdd ctermbg=253 ctermfg=64 guibg=#dcdfe7 guifg=#668e3d
-  hi GitGutterChange ctermbg=253 ctermfg=31 guibg=#dcdfe7 guifg=#3f83a6
-  hi GitGutterChangeDelete ctermbg=253 ctermfg=31 guibg=#dcdfe7 guifg=#3f83a6
-  hi GitGutterDelete ctermbg=253 ctermfg=125 guibg=#dcdfe7 guifg=#cc517a
-  hi gitmessengerEndOfBuffer ctermbg=253 ctermfg=248 guibg=#dcdfe7 guifg=#9fa7bd
-  hi gitmessengerPopupNormal ctermbg=253 ctermfg=237 guibg=#dcdfe7 guifg=#33374c
+  hi GitGutterAdd ctermbg=254 ctermfg=64 guibg=#e8e9ec guifg=#668e3d
+  hi GitGutterChange ctermbg=254 ctermfg=31 guibg=#e8e9ec guifg=#3f83a6
+  hi GitGutterChangeDelete ctermbg=254 ctermfg=31 guibg=#e8e9ec guifg=#3f83a6
+  hi GitGutterDelete ctermbg=254 ctermfg=125 guibg=#e8e9ec guifg=#cc517a
+  hi gitmessengerEndOfBuffer ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
+  hi gitmessengerPopupNormal ctermbg=254 ctermfg=237 guibg=#e8e9ec guifg=#33374c
   hi Sneak ctermbg=97 ctermfg=254 guibg=#7759b4 guifg=#e8e9ec
   hi SneakScope ctermbg=251 ctermfg=244 guibg=#c9cdd7 guifg=#8389a3
-  hi SyntasticErrorSign ctermbg=253 ctermfg=125 guibg=#dcdfe7 guifg=#cc517a
-  hi SyntasticStyleErrorSign ctermbg=253 ctermfg=125 guibg=#dcdfe7 guifg=#cc517a
-  hi SyntasticStyleWarningSign ctermbg=253 ctermfg=130 guibg=#dcdfe7 guifg=#c57339
-  hi SyntasticWarningSign ctermbg=253 ctermfg=130 guibg=#dcdfe7 guifg=#c57339
+  hi SyntasticErrorSign ctermbg=254 ctermfg=125 guibg=#e8e9ec guifg=#cc517a
+  hi SyntasticStyleErrorSign ctermbg=254 ctermfg=125 guibg=#e8e9ec guifg=#cc517a
+  hi SyntasticStyleWarningSign ctermbg=254 ctermfg=130 guibg=#e8e9ec guifg=#c57339
+  hi SyntasticWarningSign ctermbg=254 ctermfg=130 guibg=#e8e9ec guifg=#c57339
   hi ZenSpace ctermbg=125 guibg=#cc517a
   hi TSFunction ctermfg=237 guifg=#505695
   hi TSFunctionBuiltin ctermfg=237 guifg=#505695
@@ -121,16 +121,16 @@ if &background == 'light'
   hi TSURI cterm=underline ctermfg=31 gui=underline guifg=#3f83a6 term=underline
   hi DiagnosticUnderlineInfo cterm=underline ctermfg=31 gui=underline guisp=#3f83a6 term=underline
   hi DiagnosticInfo ctermfg=31 guifg=#3f83a6
-  hi DiagnosticSignInfo ctermbg=253 ctermfg=31 guibg=#dcdfe7 guifg=#3f83a6
+  hi DiagnosticSignInfo ctermbg=254 ctermfg=31 guibg=#e8e9ec guifg=#3f83a6
   hi DiagnosticUnderlineHint cterm=underline ctermfg=244 gui=underline guisp=#8389a3 term=underline
   hi DiagnosticHint ctermfg=244 guifg=#8389a3
-  hi DiagnosticSignHint ctermbg=253 ctermfg=244 guibg=#dcdfe7 guifg=#8389a3
+  hi DiagnosticSignHint ctermbg=254 ctermfg=244 guibg=#e8e9ec guifg=#8389a3
   hi DiagnosticUnderlineWarn cterm=underline ctermfg=130 gui=underline guisp=#c57339 term=underline
   hi DiagnosticWarn ctermfg=130 guifg=#c57339
-  hi DiagnosticSignWarn ctermbg=253 ctermfg=130 guibg=#dcdfe7 guifg=#c57339
+  hi DiagnosticSignWarn ctermbg=254 ctermfg=130 guibg=#e8e9ec guifg=#c57339
   hi DiagnosticUnderlineError cterm=underline ctermfg=125 gui=underline guisp=#cc517a term=underline
   hi DiagnosticError ctermfg=125 guifg=#cc517a
-  hi DiagnosticSignError ctermbg=253 ctermfg=125 guibg=#dcdfe7 guifg=#cc517a
+  hi DiagnosticSignError ctermbg=254 ctermfg=125 guibg=#e8e9ec guifg=#cc517a
   hi DiagnosticFloatingHint ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#33374c
   hi icebergALAccentRed ctermfg=125 guifg=#cc517a
   hi IndentBlanklineIndent1 ctermfg=251 guifg=#cbcfda
@@ -182,13 +182,13 @@ else
   hi NonText ctermfg=236 guifg=#242940
   hi Whitespace ctermfg=236 guifg=#242940
   hi Folded ctermbg=235 ctermfg=245 guibg=#1e2132 guifg=#686f9a
-  hi FoldColumn ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
+  hi FoldColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
   hi Function ctermfg=110 guifg=#84a0c6
   hi Identifier cterm=NONE ctermfg=109 guifg=#89b8c2
   hi Ignore ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
   hi Include ctermfg=110 guifg=#84a0c6
   hi IncSearch ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
-  hi LineNr ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
+  hi LineNr ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
   hi MatchParen ctermbg=237 ctermfg=255 guibg=#3e445e guifg=#ffffff
   hi ModeMsg ctermfg=242 guifg=#6b7089
   hi MoreMsg ctermfg=150 guifg=#b4be82
@@ -201,7 +201,7 @@ else
   hi Question ctermfg=150 guifg=#b4be82
   hi QuickFixLine ctermbg=236 ctermfg=252 guibg=#272c42 guifg=#c6c8d1
   hi Search ctermbg=109 ctermfg=234 guibg=#89b8c2 guifg=#392313
-  hi SignColumn ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
+  hi SignColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
   hi Special ctermfg=216 guifg=#e4aa80
   hi SpecialKey ctermfg=240 guifg=#515e97
   hi SpellBad ctermbg=95 ctermfg=252 gui=undercurl guifg=NONE guisp=#e27878
@@ -231,8 +231,8 @@ else
   hi icebergNormalFg ctermfg=252 guifg=#c6c8d1
   hi diffAdded ctermfg=150 guifg=#b4be82
   hi diffRemoved ctermfg=203 guifg=#e27878
-  hi ALEErrorSign ctermbg=235 ctermfg=203 guibg=#1e2132 guifg=#e27878
-  hi ALEWarningSign ctermbg=235 ctermfg=216 guibg=#1e2132 guifg=#e2a478
+  hi ALEErrorSign ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
+  hi ALEWarningSign ctermbg=234 ctermfg=216 guibg=#161821 guifg=#e2a478
   hi ALEVirtualTextError ctermfg=203 guifg=#e27878
   hi ALEVirtualTextWarning ctermfg=216 guifg=#e2a478
   hi CtrlPMode1 ctermbg=236 ctermfg=242 guibg=#2e313f guifg=#6b7089
@@ -240,18 +240,18 @@ else
   hi EasyMotionTarget ctermfg=150 guifg=#b4be82
   hi EasyMotionTarget2First ctermfg=216 guifg=#e2a478
   hi EasyMotionTarget2Second ctermfg=216 guifg=#e2a478
-  hi GitGutterAdd ctermbg=235 ctermfg=150 guibg=#1e2132 guifg=#b4be82
-  hi GitGutterChange ctermbg=235 ctermfg=109 guibg=#1e2132 guifg=#89b8c2
-  hi GitGutterChangeDelete ctermbg=235 ctermfg=109 guibg=#1e2132 guifg=#89b8c2
-  hi GitGutterDelete ctermbg=235 ctermfg=203 guibg=#1e2132 guifg=#e27878
-  hi gitmessengerEndOfBuffer ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
-  hi gitmessengerPopupNormal ctermbg=235 ctermfg=252 guibg=#1e2132 guifg=#c6c8d1
+  hi GitGutterAdd ctermbg=234 ctermfg=150 guibg=#161821 guifg=#b4be82
+  hi GitGutterChange ctermbg=234 ctermfg=109 guibg=#161821 guifg=#89b8c2
+  hi GitGutterChangeDelete ctermbg=234 ctermfg=109 guibg=#161821 guifg=#89b8c2
+  hi GitGutterDelete ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
+  hi gitmessengerEndOfBuffer ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
+  hi gitmessengerPopupNormal ctermbg=234 ctermfg=252 guibg=#161821 guifg=#c6c8d1
   hi Sneak ctermbg=140 ctermfg=234 guibg=#a093c7 guifg=#161821
   hi SneakScope ctermbg=236 ctermfg=242 guibg=#272c42 guifg=#6b7089
-  hi SyntasticErrorSign ctermbg=235 ctermfg=203 guibg=#1e2132 guifg=#e27878
-  hi SyntasticStyleErrorSign ctermbg=235 ctermfg=203 guibg=#1e2132 guifg=#e27878
-  hi SyntasticStyleWarningSign ctermbg=235 ctermfg=216 guibg=#1e2132 guifg=#e2a478
-  hi SyntasticWarningSign ctermbg=235 ctermfg=216 guibg=#1e2132 guifg=#e2a478
+  hi SyntasticErrorSign ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
+  hi SyntasticStyleErrorSign ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
+  hi SyntasticStyleWarningSign ctermbg=234 ctermfg=216 guibg=#161821 guifg=#e2a478
+  hi SyntasticWarningSign ctermbg=234 ctermfg=216 guibg=#161821 guifg=#e2a478
   hi ZenSpace ctermbg=203 guibg=#e27878
   hi TSFunction ctermfg=252 guifg=#a3adcb
   hi TSFunctionBuiltin ctermfg=252 guifg=#a3adcb
@@ -260,16 +260,16 @@ else
   hi TSURI cterm=underline ctermfg=109 gui=underline guifg=#89b8c2 term=underline
   hi DiagnosticUnderlineInfo cterm=underline ctermfg=109 gui=underline guisp=#89b8c2 term=underline
   hi DiagnosticInfo ctermfg=109 guifg=#89b8c2
-  hi DiagnosticSignInfo ctermbg=235 ctermfg=109 guibg=#1e2132 guifg=#89b8c2
+  hi DiagnosticSignInfo ctermbg=234 ctermfg=109 guibg=#161821 guifg=#89b8c2
   hi DiagnosticUnderlineHint cterm=underline ctermfg=242 gui=underline guisp=#6b7089 term=underline
   hi DiagnosticHint ctermfg=242 guifg=#6b7089
-  hi DiagnosticSignHint ctermbg=235 ctermfg=242 guibg=#1e2132 guifg=#6b7089
+  hi DiagnosticSignHint ctermbg=234 ctermfg=242 guibg=#161821 guifg=#6b7089
   hi DiagnosticUnderlineWarn cterm=underline ctermfg=216 gui=underline guisp=#e2a478 term=underline
   hi DiagnosticWarn ctermfg=216 guifg=#e2a478
-  hi DiagnosticSignWarn ctermbg=235 ctermfg=216 guibg=#1e2132 guifg=#e2a478
+  hi DiagnosticSignWarn ctermbg=234 ctermfg=216 guibg=#161821 guifg=#e2a478
   hi DiagnosticUnderlineError cterm=underline ctermfg=203 gui=underline guisp=#e27878 term=underline
   hi DiagnosticError ctermfg=203 guifg=#e27878
-  hi DiagnosticSignError ctermbg=235 ctermfg=203 guibg=#1e2132 guifg=#e27878
+  hi DiagnosticSignError ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
   hi DiagnosticFloatingHint ctermbg=236 ctermfg=251 guibg=#3d425b guifg=#c6c8d1
   hi icebergALAccentRed ctermfg=203 guifg=#e27878
   hi IndentBlanklineIndent1 ctermfg=236 guifg=#242940
