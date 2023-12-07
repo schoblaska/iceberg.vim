@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 14:40-0600
+" Modified:   2023-12-07 14:55-0600
 " License:    MIT
 
 
@@ -135,6 +135,8 @@ if &background == 'light'
   hi icebergALAccentRed ctermfg=125 guifg=#cc517a
   hi NormalFloat ctermbg=253 guibg=#f5f6f7
   hi FloatBorder ctermfg=248 guifg=#9fa7bd
+  hi TreesitterContextLineNumber ctermbg=253 ctermfg=248 guibg=#f5f6f7 guifg=#9fa7bd
+  hi TreesitterContextSeparator ctermbg=253 ctermfg=248 guibg=#f5f6f7 guifg=#9fa7bd
   hi @symbol ctermfg=64 guifg=#668e3d
   hi IndentBlanklineIndent1 ctermfg=251 guifg=#cbcfda
   hi IndentBlanklineContextChar ctermfg=248 guifg=#9fa7bd
@@ -276,6 +278,8 @@ else
   hi icebergALAccentRed ctermfg=203 guifg=#e27878
   hi NormalFloat ctermbg=235 guibg=#12141c
   hi FloatBorder ctermfg=239 guifg=#444b71
+  hi TreesitterContextLineNumber ctermbg=235 ctermfg=239 guibg=#12141c guifg=#444b71
+  hi TreesitterContextSeparator ctermbg=235 ctermfg=239 guibg=#12141c guifg=#444b71
   hi @symbol ctermfg=150 guifg=#b4be82
   hi IndentBlanklineIndent1 ctermfg=236 guifg=#242940
   hi IndentBlanklineContextChar ctermfg=239 guifg=#444b71

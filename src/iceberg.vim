@@ -653,6 +653,20 @@ function! s:create_colors(palette) abort
         \   'guifg': g.linenr_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
+        \ ['TreesitterContextLineNumber'], {
+        \   'ctermbg': c.float_bg,
+        \   'ctermfg': c.linenr_fg,
+        \   'guibg': g.float_bg,
+        \   'guifg': g.linenr_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TreesitterContextSeparator'], {
+        \   'ctermbg': c.float_bg,
+        \   'ctermfg': c.linenr_fg,
+        \   'guibg': g.float_bg,
+        \   'guifg': g.linenr_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
         \ '@symbol', {
         \   'ctermfg': c.green,
         \   'guifg': g.green,
