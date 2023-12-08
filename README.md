@@ -1,7 +1,7 @@
 <div align="center">
-  <img width="400px" src="https://raw.githubusercontent.com/choblaska/iceberg.vim/main/screens/schoblaska.png" />
+  <img width="400px" src="https://raw.githubusercontent.com/schoblaska/iceberg.vim/main/screens/schoblaska.png" />
 
-  Compare to <a href="https://raw.githubusercontent.com/choblaska/iceberg.vim/main/screens/cocopon.png">original</a>.
+  Compare to <a href="https://raw.githubusercontent.com/schoblaska/iceberg.vim/main/screens/cocopon.png">original</a>.
 </div>
 
 
