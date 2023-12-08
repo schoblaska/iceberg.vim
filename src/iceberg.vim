@@ -712,19 +712,23 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ ["FlashLabel"], {
-        \   'ctermbg': c.orange,
-        \   'ctermfg': c.float_bg,
-        \   'guibg': g.orange,
-        \   'guifg': g.float_bg,
+        \   'ctermbg': c.float_bg,
+        \   'ctermfg': c.red,
+        \   'guibg': g.float_bg,
+        \   'guifg': g.red,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ ["FlashMatch"], {
-        \   'ctermfg': c.lblue,
-        \   'guifg': g.lblue,
+        \   'ctermbg': c.float_bg,
+        \   'ctermfg': c.pale,
+        \   'guibg': g.float_bg,
+        \   'guifg': g.pale,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ ["FlashCurrent"], {
+        \   'ctermbg': c.float_bg,
         \   'ctermfg': c.orange,
+        \   'guibg': g.float_bg,
         \   'guifg': g.orange,
         \ }))
   call extend(rules, pgmnt#hi#group(

@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 19:46-0600
+" Modified:   2023-12-07 19:57-0600
 " License:    MIT
 
 
@@ -144,9 +144,9 @@ if &background == 'light'
   hi IndentBlanklineContextChar ctermfg=248 guifg=#9fa7bd
   hi HlSearchLens ctermbg=253 ctermfg=31 guibg=#f5f6f7 guifg=#3f83a6
   hi HlSearchLensNear ctermbg=253 ctermfg=180 guibg=#f5f6f7 guifg=#eac6ad
-  hi FlashLabel ctermbg=130 ctermfg=253 guibg=#c57339 guifg=#f5f6f7
-  hi FlashMatch ctermfg=31 guifg=#3f83a6
-  hi FlashCurrent ctermfg=130 guifg=#c57339
+  hi FlashLabel ctermbg=253 ctermfg=125 guibg=#f5f6f7 guifg=#cc517a
+  hi FlashMatch ctermbg=253 ctermfg=237 guibg=#f5f6f7 guifg=#505695
+  hi FlashCurrent ctermbg=253 ctermfg=130 guibg=#f5f6f7 guifg=#c57339
   hi TelescopePromptNormal ctermbg=253 ctermfg=237 guibg=#f5f6f7 guifg=#33374c
   hi TelescopeBorder ctermfg=244 guifg=#8389a3
 
@@ -294,9 +294,9 @@ else
   hi IndentBlanklineContextChar ctermfg=239 guifg=#444b71
   hi HlSearchLens ctermbg=235 ctermfg=109 guibg=#12141c guifg=#89b8c2
   hi HlSearchLensNear ctermbg=235 ctermfg=216 guibg=#12141c guifg=#e4aa80
-  hi FlashLabel ctermbg=216 ctermfg=235 guibg=#e2a478 guifg=#12141c
-  hi FlashMatch ctermfg=109 guifg=#89b8c2
-  hi FlashCurrent ctermfg=216 guifg=#e2a478
+  hi FlashLabel ctermbg=235 ctermfg=203 guibg=#12141c guifg=#e27878
+  hi FlashMatch ctermbg=235 ctermfg=252 guibg=#12141c guifg=#a3adcb
+  hi FlashCurrent ctermbg=235 ctermfg=216 guibg=#12141c guifg=#e2a478
   hi TelescopePromptNormal ctermbg=235 ctermfg=252 guibg=#12141c guifg=#c6c8d1
   hi TelescopeBorder ctermfg=242 guifg=#6b7089
 
