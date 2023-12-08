@@ -4,7 +4,6 @@
   Compare to <a href="https://raw.githubusercontent.com/schoblaska/iceberg.vim/main/screens/cocopon.png">original</a>.
 </div>
 
-
 ----
 
 ![Iceberg](https://cocopon.github.io/iceberg.vim/assets/github/20180804/cover.png)
