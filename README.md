@@ -1,3 +1,12 @@
+<div align="center">
+  <img width="400px" src="https://raw.githubusercontent.com/choblaska/iceberg.vim/main/screens/schoblaska.png" />
+
+  Compare to <a href="https://raw.githubusercontent.com/choblaska/iceberg.vim/main/screens/cocopon.png">original</a>.
+</div>
+
+
+----
+
 ![Iceberg](https://cocopon.github.io/iceberg.vim/assets/github/20180804/cover.png)
 
 Iceberg is well-designed, bluish color scheme for Vim and Neovim.
