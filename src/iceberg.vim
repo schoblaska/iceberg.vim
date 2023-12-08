@@ -698,12 +698,16 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'HlSearchLens', {
+        \   'ctermbg': c.float_bg,
         \   'ctermfg': c.lblue,
+        \   'guibg': g.float_bg,
         \   'guifg': g.lblue,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'HlSearchLensNear', {
+        \   'ctermbg': c.float_bg,
         \   'ctermfg': c.search_bg,
+        \   'guibg': g.float_bg,
         \   'guifg': g.search_bg,
         \ }))
   call extend(rules, pgmnt#hi#group(

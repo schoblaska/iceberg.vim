@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 18:05-0600
+" Modified:   2023-12-07 18:07-0600
 " License:    MIT
 
 
@@ -142,8 +142,8 @@ if &background == 'light'
   hi @symbol ctermfg=64 guifg=#668e3d
   hi IndentBlanklineIndent1 ctermfg=251 guifg=#cbcfda
   hi IndentBlanklineContextChar ctermfg=248 guifg=#9fa7bd
-  hi HlSearchLens ctermfg=31 guifg=#3f83a6
-  hi HlSearchLensNear ctermfg=180 guifg=#eac6ad
+  hi HlSearchLens ctermbg=253 ctermfg=31 guibg=#f5f6f7 guifg=#3f83a6
+  hi HlSearchLensNear ctermbg=253 ctermfg=180 guibg=#f5f6f7 guifg=#eac6ad
   hi FlashLabel ctermbg=130 ctermfg=253 guibg=#c57339 guifg=#f5f6f7
   hi FlashMatch ctermfg=31 guifg=#3f83a6
   hi FlashCurrent ctermfg=130 guifg=#c57339
@@ -290,8 +290,8 @@ else
   hi @symbol ctermfg=150 guifg=#b4be82
   hi IndentBlanklineIndent1 ctermfg=236 guifg=#242940
   hi IndentBlanklineContextChar ctermfg=239 guifg=#444b71
-  hi HlSearchLens ctermfg=109 guifg=#89b8c2
-  hi HlSearchLensNear ctermfg=216 guifg=#e4aa80
+  hi HlSearchLens ctermbg=235 ctermfg=109 guibg=#12141c guifg=#89b8c2
+  hi HlSearchLensNear ctermbg=235 ctermfg=216 guibg=#12141c guifg=#e4aa80
   hi FlashLabel ctermbg=216 ctermfg=235 guibg=#e2a478 guifg=#12141c
   hi FlashMatch ctermfg=109 guifg=#89b8c2
   hi FlashCurrent ctermfg=216 guifg=#e2a478
