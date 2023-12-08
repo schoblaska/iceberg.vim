@@ -999,7 +999,7 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('HlSearchNear', 'IncSearch'))
   call add(links, pgmnt#hi#link('@type.tsx', 'Special'))
   call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
-  call add(links, pgmnt#hi#link('TabLineSeparatorSel', '@symbol'))
+  call add(links, pgmnt#hi#link('TabLineSeparatorSel', 'Error'))
 
   call add(links, pgmnt#hi#link('NvimTreeNormal', 'NormalFloat'))
   call add(links, pgmnt#hi#link('AerialNormal', 'NormalFloat'))
