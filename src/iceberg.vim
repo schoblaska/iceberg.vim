@@ -727,6 +727,18 @@ function! s:create_colors(palette) abort
         \   'ctermfg': c.orange,
         \   'guifg': g.orange,
         \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ["TelescopePromptNormal"], {
+        \   'ctermbg': c.float_bg,
+        \   'ctermfg': c.normal_fg,
+        \   'guibg': g.float_bg,
+        \   'guifg': g.normal_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ["TelescopeBorder"], {
+        \   'ctermfg': c.comment_fg,
+        \   'guifg': g.comment_fg,
+        \ }))
 
   "
   " end custom rules
@@ -988,6 +1000,7 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('NvimTreeNormal', 'NormalFloat'))
   call add(links, pgmnt#hi#link('AerialNormal', 'NormalFloat'))
   call add(links, pgmnt#hi#link('AerialNormalNC', 'NormalFloat'))
+  call add(links, pgmnt#hi#link('DiffviewNormal', 'NormalFloat'))
 
   call add(links, pgmnt#hi#link("NavicIconsFile", "Directory"))
   call add(links, pgmnt#hi#link("NavicIconsModule", "@namespace"))
