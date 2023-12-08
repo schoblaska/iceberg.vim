@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-07 16:39-0600
+" Modified:   2023-12-07 18:05-0600
 " License:    MIT
 
 
@@ -144,6 +144,9 @@ if &background == 'light'
   hi IndentBlanklineContextChar ctermfg=248 guifg=#9fa7bd
   hi HlSearchLens ctermfg=31 guifg=#3f83a6
   hi HlSearchLensNear ctermfg=180 guifg=#eac6ad
+  hi FlashLabel ctermbg=130 ctermfg=253 guibg=#c57339 guifg=#f5f6f7
+  hi FlashMatch ctermfg=31 guifg=#3f83a6
+  hi FlashCurrent ctermfg=130 guifg=#c57339
 
   if has('nvim')
     let g:terminal_color_0 = '#dcdfe7'
@@ -289,6 +292,9 @@ else
   hi IndentBlanklineContextChar ctermfg=239 guifg=#444b71
   hi HlSearchLens ctermfg=109 guifg=#89b8c2
   hi HlSearchLensNear ctermfg=216 guifg=#e4aa80
+  hi FlashLabel ctermbg=216 ctermfg=235 guibg=#e2a478 guifg=#12141c
+  hi FlashMatch ctermfg=109 guifg=#89b8c2
+  hi FlashCurrent ctermfg=216 guifg=#e2a478
 
   if has('nvim')
     let g:terminal_color_0 = '#1e2132'
@@ -475,6 +481,9 @@ hi! link HlSearchNear IncSearch
 hi! link @type.tsx Special
 hi! link @lsp.type.interface.typescriptreact @symbol
 hi! link TabLineSeparatorSel @symbol
+hi! link NvimTreeNormal NormalFloat
+hi! link AerialNormal NormalFloat
+hi! link AerialNormalNC NormalFloat
 hi! link NavicIconsFile Directory
 hi! link NavicIconsModule @namespace
 hi! link NavicIconsNamespace @namespace
