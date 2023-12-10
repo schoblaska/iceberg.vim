@@ -292,16 +292,16 @@ function! s:create_colors(palette) abort
         \   'gui': 'NONE',
         \   'guifg': g.blue,
         \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ ['StatusLine', 'StatusLineTerm'], {
-        \   'cterm': 'reverse',
-        \   'ctermbg': c.statusline_fg,
-        \   'ctermfg': c.statusline_bg,
-        \   'gui': 'reverse',
-        \   'guibg': g.statusline_fg,
-        \   'guifg': g.statusline_bg,
-        \   'term': 'reverse',
-        \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ ['StatusLine', 'StatusLineTerm'], {
+  "       \   'cterm': 'reverse',
+  "       \   'ctermbg': c.statusline_fg,
+  "       \   'ctermfg': c.statusline_bg,
+  "       \   'gui': 'reverse',
+  "       \   'guibg': g.statusline_fg,
+  "       \   'guifg': g.statusline_bg,
+  "       \   'term': 'reverse',
+  "       \ }))
   call extend(rules, pgmnt#hi#group(
         \ ['StatusLineNC', 'StatusLineTermNC'], {
         \   'cterm': 'reverse',
