@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-09 18:45-0600
+" Modified:   2023-12-11 11:46-0600
 " License:    MIT
 
 
@@ -447,7 +447,7 @@ hi! link TSLabel Special
 hi! link TSNamespace Statement
 hi! link TSNumber Constant
 hi! link TSOperator icebergNormalFg
-hi! link TSParameter icebergNormalFg
+hi! link TSParameter String
 hi! link TSParameterReference icebergNormalFg
 hi! link TSProperty icebergNormalFg
 hi! link TSPunctDelimiter icebergNormalFg

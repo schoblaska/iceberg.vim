@@ -958,7 +958,7 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('TSNamespace', 'Statement'))
   call add(links, pgmnt#hi#link('TSNumber', 'Constant'))
   call add(links, pgmnt#hi#link('TSOperator', 'icebergNormalFg'))
-  call add(links, pgmnt#hi#link('TSParameter', 'icebergNormalFg'))
+  call add(links, pgmnt#hi#link('TSParameter', 'String'))
   call add(links, pgmnt#hi#link('TSParameterReference', 'icebergNormalFg'))
   call add(links, pgmnt#hi#link('TSProperty', 'icebergNormalFg'))
   call add(links, pgmnt#hi#link('TSPunctDelimiter', 'icebergNormalFg'))
