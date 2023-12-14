@@ -40,8 +40,8 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Constant', {
-        \   'ctermfg': c.purple,
-        \   'guifg': g.purple,
+        \   'ctermfg': c.orange,
+        \   'guifg': g.orange,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Cursor', {
@@ -375,9 +375,9 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Type', {
-        \   'ctermfg': c.blue,
+        \   'ctermfg': c.purple,
         \   'gui': 'NONE',
-        \   'guifg': g.blue,
+        \   'guifg': g.purple,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Underlined', {
@@ -997,9 +997,9 @@ function! s:create_links() abort
 
   call add(links, pgmnt#hi#link('WinSeparator', 'VertSplit'))
   call add(links, pgmnt#hi#link('HlSearchNear', 'IncSearch'))
-  call add(links, pgmnt#hi#link('@type.tsx', 'Special'))
-  call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
   call add(links, pgmnt#hi#link('TabLineSeparatorSel', 'Error'))
+
+  call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
 
   call add(links, pgmnt#hi#link('NvimTreeNormal', 'NormalFloat'))
   call add(links, pgmnt#hi#link('AerialNormal', 'NormalFloat'))

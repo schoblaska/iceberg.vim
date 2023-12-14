@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-11 11:46-0600
+" Modified:   2023-12-14 10:01-0600
 " License:    MIT
 
 
@@ -27,7 +27,7 @@ if &background == 'light'
   hi CursorLine cterm=NONE ctermbg=253 ctermfg=NONE guibg=#dcdfe7 guifg=NONE
   hi Comment ctermfg=244 guifg=#8389a3
   hi Conceal ctermbg=254 ctermfg=244 guibg=#e8e9ec guifg=#8389a3
-  hi Constant ctermfg=97 guifg=#7759b4
+  hi Constant ctermfg=130 guifg=#c57339
   hi Cursor ctermbg=237 ctermfg=254 guibg=#33374c guifg=#e8e9ec
   hi CursorLineNr cterm=NONE ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#576a9e
   hi Delimiter ctermfg=237 guifg=#33374c
@@ -81,7 +81,7 @@ if &background == 'light'
   hi TermCursorNC ctermbg=244 ctermfg=254 guibg=#8389a3 guifg=#e8e9ec
   hi Title ctermfg=130 gui=NONE guifg=#c57339
   hi Todo ctermbg=254 ctermfg=64 guibg=#d4dbd1 guifg=#668e3d
-  hi Type ctermfg=25 gui=NONE guifg=#2d539e
+  hi Type ctermfg=97 gui=NONE guifg=#7759b4
   hi Underlined cterm=underline ctermfg=25 gui=underline guifg=#2d539e term=underline
   hi VertSplit cterm=NONE ctermfg=251 gui=NONE guifg=#cad0de
   hi Visual ctermbg=251 ctermfg=NONE guibg=#c9cdd7 guifg=NONE
@@ -175,7 +175,7 @@ else
   hi CursorLine cterm=NONE ctermbg=235 ctermfg=NONE guibg=#1e2132 guifg=NONE
   hi Comment ctermfg=242 guifg=#6b7089
   hi Conceal ctermbg=234 ctermfg=242 guibg=#161821 guifg=#6b7089
-  hi Constant ctermfg=140 guifg=#a093c7
+  hi Constant ctermfg=216 guifg=#e2a478
   hi Cursor ctermbg=252 ctermfg=234 guibg=#c6c8d1 guifg=#161821
   hi CursorLineNr cterm=NONE ctermbg=237 ctermfg=253 guibg=#2a3158 guifg=#cdd1e6
   hi Delimiter ctermfg=252 guifg=#c6c8d1
@@ -229,7 +229,7 @@ else
   hi TermCursorNC ctermbg=242 ctermfg=234 guibg=#6b7089 guifg=#161821
   hi Title ctermfg=216 gui=NONE guifg=#e2a478
   hi Todo ctermbg=234 ctermfg=150 guibg=#45493e guifg=#b4be82
-  hi Type ctermfg=110 gui=NONE guifg=#84a0c6
+  hi Type ctermfg=140 gui=NONE guifg=#a093c7
   hi Underlined cterm=underline ctermfg=110 gui=underline guifg=#84a0c6 term=underline
   hi VertSplit cterm=NONE ctermfg=233 gui=NONE guifg=#0f1117
   hi Visual ctermbg=236 ctermfg=NONE guibg=#272c42 guifg=NONE
@@ -478,9 +478,8 @@ hi! link typescriptNull Constant
 hi! link typescriptParens icebergNormalFg
 hi! link WinSeparator VertSplit
 hi! link HlSearchNear IncSearch
-hi! link @type.tsx Special
-hi! link @lsp.type.interface.typescriptreact @symbol
 hi! link TabLineSeparatorSel Error
+hi! link @lsp.type.interface.typescriptreact @symbol
 hi! link NvimTreeNormal NormalFloat
 hi! link AerialNormal NormalFloat
 hi! link AerialNormalNC NormalFloat
