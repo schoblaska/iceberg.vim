@@ -90,8 +90,8 @@ function! iceberg#palette#dark#create() abort
   let g.matchparen_fg = pgmnt#color#lighten(g.normal_fg, 0.50)
   let g.search_bg = pgmnt#color#hsl(hue_orange, 0.65, 0.70)
   let g.search_fg = pgmnt#color#hsl(hue_orange, 0.50, 0.15)
-  let g.blue_search_bg = pgmnt#color#hsl(hue_blue, 0.65, 0.70)
-  let g.blue_search_fg = pgmnt#color#hsl(hue_blue, 0.50, 0.15)
+  let g.blue_search_bg = pgmnt#color#hsl(hue_lblue, 0.65, 0.70)
+  let g.blue_search_fg = pgmnt#color#hsl(hue_lblue, 0.50, 0.15)
   let g.specialkey_fg = pgmnt#color#adjust_color(
         \ g.normal_bg, {
         \   'saturation': +0.10,

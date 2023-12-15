@@ -1001,6 +1001,8 @@ function! s:create_links() abort
 
   call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
 
+  call add(links, pgmnt#hi#link('@type.ruby', 'Constant'))
+
   call add(links, pgmnt#hi#link('NvimTreeNormal', 'NormalFloat'))
   call add(links, pgmnt#hi#link('AerialNormal', 'NormalFloat'))
   call add(links, pgmnt#hi#link('AerialNormalNC', 'NormalFloat'))

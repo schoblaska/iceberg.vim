@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-14 10:01-0600
+" Modified:   2023-12-15 10:15-0600
 " License:    MIT
 
 
@@ -480,6 +480,7 @@ hi! link WinSeparator VertSplit
 hi! link HlSearchNear IncSearch
 hi! link TabLineSeparatorSel Error
 hi! link @lsp.type.interface.typescriptreact @symbol
+hi! link @type.ruby Constant
 hi! link NvimTreeNormal NormalFloat
 hi! link AerialNormal NormalFloat
 hi! link AerialNormalNC NormalFloat
