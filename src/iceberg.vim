@@ -647,8 +647,8 @@ function! s:create_colors(palette) abort
 
   call extend(rules, pgmnt#hi#group(
         \ 'Constant', {
-        \   'ctermfg': c.orange,
-        \   'guifg': g.orange,
+        \   'ctermfg': c.pink,
+        \   'guifg': g.pink,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'FoldColumn', {
@@ -687,8 +687,8 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Special', {
-        \   'ctermfg': c.search_bg,
-        \   'guifg': g.search_bg,
+        \   'ctermfg': c.purple,
+        \   'guifg': g.purple,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Type', {
@@ -1062,6 +1062,9 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('TabLineSeparatorSel', 'Error'))
 
   call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
+  call add(links, pgmnt#hi#link('@constructor.tsx', 'TSFunction'))
+  call add(links, pgmnt#hi#link('@tag.delimiter.tsx', 'TSFunction'))
+  call add(links, pgmnt#hi#link('@tag.tsx', 'Special'))
 
   call add(links, pgmnt#hi#link('@type.ruby', 'Constant'))
 

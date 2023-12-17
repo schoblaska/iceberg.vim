@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-16 18:30-0600
+" Modified:   2023-12-16 18:47-0600
 " License:    MIT
 
 
@@ -122,13 +122,13 @@ if &background == 'light'
   hi DiagnosticSignError ctermbg=254 ctermfg=125 guibg=#e8e9ec guifg=#cc517a
   hi DiagnosticFloatingHint ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#33374c
   hi icebergALAccentRed ctermfg=125 guifg=#cc517a
-  hi Constant ctermfg=130 guifg=#c57339
+  hi Constant ctermfg=213 guifg=#ad59b4
   hi FoldColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
   hi IncSearch ctermbg=180 ctermfg=94 guibg=#eac6ad guifg=#85512c
   hi LineNr ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
   hi Search ctermbg=31 ctermfg=94 guibg=#3f83a6 guifg=#85512c
   hi SignColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
-  hi Special ctermfg=180 guifg=#eac6ad
+  hi Special ctermfg=97 guifg=#7759b4
   hi Type ctermfg=97 gui=NONE guifg=#7759b4
   hi VertSplit cterm=NONE ctermfg=251 gui=NONE guifg=#cad0de
   hi NormalFloat ctermbg=253 guibg=#f5f6f7
@@ -270,13 +270,13 @@ else
   hi DiagnosticSignError ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
   hi DiagnosticFloatingHint ctermbg=236 ctermfg=251 guibg=#3d425b guifg=#c6c8d1
   hi icebergALAccentRed ctermfg=203 guifg=#e27878
-  hi Constant ctermfg=216 guifg=#e2a478
+  hi Constant ctermfg=177 guifg=#c793c7
   hi FoldColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
   hi IncSearch ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
   hi LineNr ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
   hi Search ctermbg=109 ctermfg=234 guibg=#89b8c2 guifg=#392313
   hi SignColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
-  hi Special ctermfg=216 guifg=#e4aa80
+  hi Special ctermfg=140 guifg=#a093c7
   hi Type ctermfg=140 gui=NONE guifg=#a093c7
   hi VertSplit cterm=NONE ctermfg=233 gui=NONE guifg=#0f1117
   hi NormalFloat ctermbg=235 guibg=#12141c
@@ -480,6 +480,9 @@ hi! link WinSeparator VertSplit
 hi! link HlSearchNear IncSearch
 hi! link TabLineSeparatorSel Error
 hi! link @lsp.type.interface.typescriptreact @symbol
+hi! link @constructor.tsx TSFunction
+hi! link @tag.delimiter.tsx TSFunction
+hi! link @tag.tsx Special
 hi! link @type.ruby Constant
 hi! link NvimTreeNormal NormalFloat
 hi! link AerialNormal NormalFloat
