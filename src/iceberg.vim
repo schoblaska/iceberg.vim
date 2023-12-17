@@ -38,11 +38,11 @@ function! s:create_colors(palette) abort
         \   'guibg': g.normal_bg,
         \   'guifg': g.comment_fg,
         \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'Constant', {
-        \   'ctermfg': c.orange,
-        \   'guifg': g.orange,
-        \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'Constant', {
+  "       \   'ctermfg': c.purple,
+  "       \   'guifg': g.purple,
+  "       \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Cursor', {
         \   'ctermbg': c.normal_fg,
@@ -119,13 +119,13 @@ function! s:create_colors(palette) abort
         \   'guibg': g.folded_bg,
         \   'guifg': g.folded_fg,
         \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'FoldColumn', {
-        \   'ctermbg': c.normal_bg,
-        \   'ctermfg': c.linenr_fg,
-        \   'guibg': g.normal_bg,
-        \   'guifg': g.linenr_fg,
-        \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'FoldColumn', {
+  "       \   'ctermbg': c.linenr_bg,
+  "       \   'ctermfg': c.linenr_fg,
+  "       \   'guibg': g.linenr_bg,
+  "       \   'guifg': g.linenr_fg,
+  "       \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Function', {
         \   'ctermfg': c.blue,
@@ -149,20 +149,21 @@ function! s:create_colors(palette) abort
         \   'ctermfg': c.blue,
         \   'guifg': g.blue,
         \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'IncSearch', {
-        \   'ctermbg': c.search_bg,
-        \   'ctermfg': c.search_fg,
-        \   'guibg': g.search_bg,
-        \   'guifg': g.search_fg,
-        \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'LineNr', {
-        \   'ctermbg': c.normal_bg,
-        \   'ctermfg': c.linenr_fg,
-        \   'guibg': g.normal_bg,
-        \   'guifg': g.linenr_fg,
-        \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'IncSearch', {
+  "       \   'cterm': 'reverse',
+  "       \   'ctermfg': 'NONE',
+  "       \   'gui': 'reverse',
+  "       \   'guifg': 'NONE',
+  "       \   'term': 'reverse',
+  "       \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'LineNr', {
+  "       \   'ctermbg': c.linenr_bg,
+  "       \   'ctermfg': c.linenr_fg,
+  "       \   'guibg': g.linenr_bg,
+  "       \   'guifg': g.linenr_fg,
+  "       \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'MatchParen', {
         \   'ctermbg': c.matchparen_bg,
@@ -230,25 +231,25 @@ function! s:create_colors(palette) abort
         \   'guibg': g.visual_bg,
         \   'guifg': g.normal_fg,
         \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'Search', {
-        \   'ctermbg': c.lblue,
-        \   'ctermfg': c.search_fg,
-        \   'guibg': g.lblue,
-        \   'guifg': g.search_fg,
-        \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'SignColumn', {
-        \   'ctermbg': c.normal_bg,
-        \   'ctermfg': c.linenr_fg,
-        \   'guibg': g.normal_bg,
-        \   'guifg': g.linenr_fg,
-        \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'Special', {
-        \   'ctermfg': c.search_bg,
-        \   'guifg': g.search_bg,
-        \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'Search', {
+  "       \   'ctermbg': c.search_bg,
+  "       \   'ctermfg': c.search_fg,
+  "       \   'guibg': g.search_bg,
+  "       \   'guifg': g.search_fg,
+  "       \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'SignColumn', {
+  "       \   'ctermbg': c.linenr_bg,
+  "       \   'ctermfg': c.linenr_fg,
+  "       \   'guibg': g.linenr_bg,
+  "       \   'guifg': g.linenr_fg,
+  "       \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'Special', {
+  "       \   'ctermfg': c.green,
+  "       \   'guifg': g.green,
+  "       \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'SpecialKey', {
         \   'ctermfg': c.specialkey_fg,
@@ -373,12 +374,12 @@ function! s:create_colors(palette) abort
         \   'guibg': g.todo_bg,
         \   'guifg': g.todo_fg,
         \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'Type', {
-        \   'ctermfg': c.purple,
-        \   'gui': 'NONE',
-        \   'guifg': g.purple,
-        \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'Type', {
+  "       \   'ctermfg': c.blue,
+  "       \   'gui': 'NONE',
+  "       \   'guifg': g.blue,
+  "       \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Underlined', {
         \   'cterm': 'underline',
@@ -387,13 +388,15 @@ function! s:create_colors(palette) abort
         \   'guifg': g.blue,
         \   'term': 'underline',
         \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'VertSplit', {
-        \   'cterm': 'NONE',
-        \   'ctermfg': c.statuslinenc_bg,
-        \   'gui': 'NONE',
-        \   'guifg': g.statuslinenc_bg,
-        \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'VertSplit', {
+  "       \   'cterm': 'NONE',
+  "       \   'ctermbg': c.statuslinenc_bg,
+  "       \   'ctermfg': c.statuslinenc_bg,
+  "       \   'gui': 'NONE',
+  "       \   'guibg': g.statuslinenc_bg,
+  "       \   'guifg': g.statuslinenc_bg,
+  "       \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Visual', {
         \   'ctermbg': c.visual_bg,
@@ -641,6 +644,65 @@ function! s:create_colors(palette) abort
   "
   " schoblaska/iceberg.vim custom rules
   "
+
+  call extend(rules, pgmnt#hi#group(
+        \ 'Constant', {
+        \   'ctermfg': c.orange,
+        \   'guifg': g.orange,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'FoldColumn', {
+        \   'ctermbg': c.normal_bg,
+        \   'ctermfg': c.linenr_fg,
+        \   'guibg': g.normal_bg,
+        \   'guifg': g.linenr_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'IncSearch', {
+        \   'ctermbg': c.search_bg,
+        \   'ctermfg': c.search_fg,
+        \   'guibg': g.search_bg,
+        \   'guifg': g.search_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'LineNr', {
+        \   'ctermbg': c.normal_bg,
+        \   'ctermfg': c.linenr_fg,
+        \   'guibg': g.normal_bg,
+        \   'guifg': g.linenr_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'Search', {
+        \   'ctermbg': c.lblue,
+        \   'ctermfg': c.search_fg,
+        \   'guibg': g.lblue,
+        \   'guifg': g.search_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'SignColumn', {
+        \   'ctermbg': c.normal_bg,
+        \   'ctermfg': c.linenr_fg,
+        \   'guibg': g.normal_bg,
+        \   'guifg': g.linenr_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'Special', {
+        \   'ctermfg': c.search_bg,
+        \   'guifg': g.search_bg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'Type', {
+        \   'ctermfg': c.purple,
+        \   'gui': 'NONE',
+        \   'guifg': g.purple,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'VertSplit', {
+        \   'cterm': 'NONE',
+        \   'ctermfg': c.statuslinenc_bg,
+        \   'gui': 'NONE',
+        \   'guifg': g.statuslinenc_bg,
+        \ }))
 
   call extend(rules, pgmnt#hi#group(
         \ ['NormalFloat'], {

@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-15 10:15-0600
+" Modified:   2023-12-16 18:30-0600
 " License:    MIT
 
 
@@ -27,7 +27,6 @@ if &background == 'light'
   hi CursorLine cterm=NONE ctermbg=253 ctermfg=NONE guibg=#dcdfe7 guifg=NONE
   hi Comment ctermfg=244 guifg=#8389a3
   hi Conceal ctermbg=254 ctermfg=244 guibg=#e8e9ec guifg=#8389a3
-  hi Constant ctermfg=130 guifg=#c57339
   hi Cursor ctermbg=237 ctermfg=254 guibg=#33374c guifg=#e8e9ec
   hi CursorLineNr cterm=NONE ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#576a9e
   hi Delimiter ctermfg=237 guifg=#33374c
@@ -43,13 +42,10 @@ if &background == 'light'
   hi NonText ctermfg=251 guifg=#cbcfda
   hi Whitespace ctermfg=251 guifg=#cbcfda
   hi Folded ctermbg=253 ctermfg=243 guibg=#dcdfe7 guifg=#788098
-  hi FoldColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
   hi Function ctermfg=25 guifg=#2d539e
   hi Identifier cterm=NONE ctermfg=31 guifg=#3f83a6
   hi Ignore ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
   hi Include ctermfg=25 guifg=#2d539e
-  hi IncSearch ctermbg=180 ctermfg=94 guibg=#eac6ad guifg=#85512c
-  hi LineNr ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
   hi MatchParen ctermbg=250 ctermfg=0 guibg=#bec0c9 guifg=#33374c
   hi ModeMsg ctermfg=244 guifg=#8389a3
   hi MoreMsg ctermfg=64 guifg=#668e3d
@@ -61,9 +57,6 @@ if &background == 'light'
   hi PreProc ctermfg=64 guifg=#668e3d
   hi Question ctermfg=64 guifg=#668e3d
   hi QuickFixLine ctermbg=251 ctermfg=237 guibg=#c9cdd7 guifg=#33374c
-  hi Search ctermbg=31 ctermfg=94 guibg=#3f83a6 guifg=#85512c
-  hi SignColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
-  hi Special ctermfg=180 guifg=#eac6ad
   hi SpecialKey ctermfg=248 guifg=#a5b0d3
   hi SpellBad ctermbg=181 ctermfg=237 gui=undercurl guifg=NONE guisp=#cc517a
   hi SpellCap ctermbg=117 ctermfg=237 gui=undercurl guifg=NONE guisp=#2d539e
@@ -81,9 +74,7 @@ if &background == 'light'
   hi TermCursorNC ctermbg=244 ctermfg=254 guibg=#8389a3 guifg=#e8e9ec
   hi Title ctermfg=130 gui=NONE guifg=#c57339
   hi Todo ctermbg=254 ctermfg=64 guibg=#d4dbd1 guifg=#668e3d
-  hi Type ctermfg=97 gui=NONE guifg=#7759b4
   hi Underlined cterm=underline ctermfg=25 gui=underline guifg=#2d539e term=underline
-  hi VertSplit cterm=NONE ctermfg=251 gui=NONE guifg=#cad0de
   hi Visual ctermbg=251 ctermfg=NONE guibg=#c9cdd7 guifg=NONE
   hi VisualNOS ctermbg=251 ctermfg=NONE guibg=#c9cdd7 guifg=NONE
   hi WildMenu ctermbg=235 ctermfg=252 guibg=#32364c guifg=#e8e9ec
@@ -131,6 +122,15 @@ if &background == 'light'
   hi DiagnosticSignError ctermbg=254 ctermfg=125 guibg=#e8e9ec guifg=#cc517a
   hi DiagnosticFloatingHint ctermbg=251 ctermfg=237 guibg=#cad0de guifg=#33374c
   hi icebergALAccentRed ctermfg=125 guifg=#cc517a
+  hi Constant ctermfg=130 guifg=#c57339
+  hi FoldColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
+  hi IncSearch ctermbg=180 ctermfg=94 guibg=#eac6ad guifg=#85512c
+  hi LineNr ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
+  hi Search ctermbg=31 ctermfg=94 guibg=#3f83a6 guifg=#85512c
+  hi SignColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
+  hi Special ctermfg=180 guifg=#eac6ad
+  hi Type ctermfg=97 gui=NONE guifg=#7759b4
+  hi VertSplit cterm=NONE ctermfg=251 gui=NONE guifg=#cad0de
   hi NormalFloat ctermbg=253 guibg=#f5f6f7
   hi FloatBorder ctermfg=248 guifg=#9fa7bd
   hi LualineEmpty ctermbg=254 ctermfg=254 guibg=#e8e9ec guifg=#e8e9ec
@@ -175,7 +175,6 @@ else
   hi CursorLine cterm=NONE ctermbg=235 ctermfg=NONE guibg=#1e2132 guifg=NONE
   hi Comment ctermfg=242 guifg=#6b7089
   hi Conceal ctermbg=234 ctermfg=242 guibg=#161821 guifg=#6b7089
-  hi Constant ctermfg=216 guifg=#e2a478
   hi Cursor ctermbg=252 ctermfg=234 guibg=#c6c8d1 guifg=#161821
   hi CursorLineNr cterm=NONE ctermbg=237 ctermfg=253 guibg=#2a3158 guifg=#cdd1e6
   hi Delimiter ctermfg=252 guifg=#c6c8d1
@@ -191,13 +190,10 @@ else
   hi NonText ctermfg=236 guifg=#242940
   hi Whitespace ctermfg=236 guifg=#242940
   hi Folded ctermbg=235 ctermfg=245 guibg=#1e2132 guifg=#686f9a
-  hi FoldColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
   hi Function ctermfg=110 guifg=#84a0c6
   hi Identifier cterm=NONE ctermfg=109 guifg=#89b8c2
   hi Ignore ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
   hi Include ctermfg=110 guifg=#84a0c6
-  hi IncSearch ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
-  hi LineNr ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
   hi MatchParen ctermbg=237 ctermfg=255 guibg=#3e445e guifg=#ffffff
   hi ModeMsg ctermfg=242 guifg=#6b7089
   hi MoreMsg ctermfg=150 guifg=#b4be82
@@ -209,9 +205,6 @@ else
   hi PreProc ctermfg=150 guifg=#b4be82
   hi Question ctermfg=150 guifg=#b4be82
   hi QuickFixLine ctermbg=236 ctermfg=252 guibg=#272c42 guifg=#c6c8d1
-  hi Search ctermbg=109 ctermfg=234 guibg=#89b8c2 guifg=#392313
-  hi SignColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
-  hi Special ctermfg=216 guifg=#e4aa80
   hi SpecialKey ctermfg=240 guifg=#515e97
   hi SpellBad ctermbg=95 ctermfg=252 gui=undercurl guifg=NONE guisp=#e27878
   hi SpellCap ctermbg=24 ctermfg=252 gui=undercurl guifg=NONE guisp=#84a0c6
@@ -229,9 +222,7 @@ else
   hi TermCursorNC ctermbg=242 ctermfg=234 guibg=#6b7089 guifg=#161821
   hi Title ctermfg=216 gui=NONE guifg=#e2a478
   hi Todo ctermbg=234 ctermfg=150 guibg=#45493e guifg=#b4be82
-  hi Type ctermfg=140 gui=NONE guifg=#a093c7
   hi Underlined cterm=underline ctermfg=110 gui=underline guifg=#84a0c6 term=underline
-  hi VertSplit cterm=NONE ctermfg=233 gui=NONE guifg=#0f1117
   hi Visual ctermbg=236 ctermfg=NONE guibg=#272c42 guifg=NONE
   hi VisualNOS ctermbg=236 ctermfg=NONE guibg=#272c42 guifg=NONE
   hi WildMenu ctermbg=255 ctermfg=234 guibg=#d4d5db guifg=#17171b
@@ -279,6 +270,15 @@ else
   hi DiagnosticSignError ctermbg=234 ctermfg=203 guibg=#161821 guifg=#e27878
   hi DiagnosticFloatingHint ctermbg=236 ctermfg=251 guibg=#3d425b guifg=#c6c8d1
   hi icebergALAccentRed ctermfg=203 guifg=#e27878
+  hi Constant ctermfg=216 guifg=#e2a478
+  hi FoldColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
+  hi IncSearch ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
+  hi LineNr ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
+  hi Search ctermbg=109 ctermfg=234 guibg=#89b8c2 guifg=#392313
+  hi SignColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
+  hi Special ctermfg=216 guifg=#e4aa80
+  hi Type ctermfg=140 gui=NONE guifg=#a093c7
+  hi VertSplit cterm=NONE ctermfg=233 gui=NONE guifg=#0f1117
   hi NormalFloat ctermbg=235 guibg=#12141c
   hi FloatBorder ctermfg=239 guifg=#444b71
   hi LualineEmpty ctermbg=234 ctermfg=234 guibg=#161821 guifg=#161821
