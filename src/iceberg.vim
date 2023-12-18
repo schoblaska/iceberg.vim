@@ -1070,7 +1070,7 @@ function! s:create_links() abort
 
   call add(links, pgmnt#hi#link('WinSeparator', 'VertSplit'))
   call add(links, pgmnt#hi#link('HlSearchNear', 'IncSearch'))
-  call add(links, pgmnt#hi#link('TabLineSeparatorSel', 'Error'))
+  call add(links, pgmnt#hi#link('TabLineSeparatorSel', '@symbol'))
 
   call add(links, pgmnt#hi#link('TSPunctDelimiter', 'Operator'))
   call add(links, pgmnt#hi#link('TSPunctBracket', 'Operator'))

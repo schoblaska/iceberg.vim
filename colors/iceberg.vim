@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-17 21:01-0600
+" Modified:   2023-12-18 13:16-0600
 " License:    MIT
 
 
@@ -470,7 +470,7 @@ hi! link typescriptNull Constant
 hi! link typescriptParens icebergNormalFg
 hi! link WinSeparator VertSplit
 hi! link HlSearchNear IncSearch
-hi! link TabLineSeparatorSel Error
+hi! link TabLineSeparatorSel @symbol
 hi! link TSPunctDelimiter Operator
 hi! link TSPunctBracket Operator
 hi! link TSOperator Operator
