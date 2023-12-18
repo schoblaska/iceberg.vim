@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-17 20:34-0600
+" Modified:   2023-12-17 20:46-0600
 " License:    MIT
 
 
@@ -128,7 +128,7 @@ if &background == 'light'
   hi Search ctermbg=31 ctermfg=94 guibg=#3f83a6 guifg=#85512c
   hi SignColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
   hi Special ctermfg=97 guifg=#7759b4
-  hi Type ctermfg=97 gui=NONE guifg=#7759b4
+  hi Type ctermfg=64 gui=NONE guifg=#668e3d
   hi Operator ctermfg=237 guifg=#505695
   hi VertSplit cterm=NONE ctermfg=251 gui=NONE guifg=#cad0de
   hi Statement ctermfg=97 gui=NONE guifg=#7759b4
@@ -277,7 +277,7 @@ else
   hi Search ctermbg=109 ctermfg=234 guibg=#89b8c2 guifg=#392313
   hi SignColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
   hi Special ctermfg=140 guifg=#a093c7
-  hi Type ctermfg=140 gui=NONE guifg=#a093c7
+  hi Type ctermfg=150 gui=NONE guifg=#b4be82
   hi Operator ctermfg=252 guifg=#a3adcb
   hi VertSplit cterm=NONE ctermfg=233 gui=NONE guifg=#0f1117
   hi Statement ctermfg=140 gui=NONE guifg=#a093c7
@@ -482,13 +482,13 @@ hi! link TSPunctDelimiter Operator
 hi! link TSPunctBracket Operator
 hi! link TSOperator Operator
 hi! link DiagnosticFloatingError Error
-hi! link @lsp.type.interface.typescriptreact @symbol
-hi! link @lsp.type.type.typescriptreact @symbol
-hi! link @type.tsx @symbol
 hi! link @constructor.tsx TSFunction
 hi! link @tag.delimiter.tsx TSFunction
 hi! link @tag.tsx Special
+hi! link @lsp.type.interface.typescriptreact Type
+hi! link @type.builtin.tsx Special
 hi! link @type.ruby Constant
+hi! link @type.qualifier.ruby Special
 hi! link NvimTreeNormal NormalFloat
 hi! link AerialNormal NormalFloat
 hi! link AerialNormalNC NormalFloat

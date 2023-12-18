@@ -692,9 +692,9 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Type', {
-        \   'ctermfg': c.purple,
+        \   'ctermfg': c.green,
         \   'gui': 'NONE',
-        \   'guifg': g.purple,
+        \   'guifg': g.green,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Operator', {
@@ -1077,14 +1077,14 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('TSOperator', 'Operator'))
   call add(links, pgmnt#hi#link('DiagnosticFloatingError', 'Error'))
 
-  call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
-  call add(links, pgmnt#hi#link('@lsp.type.type.typescriptreact', '@symbol'))
-  call add(links, pgmnt#hi#link('@type.tsx', '@symbol'))
   call add(links, pgmnt#hi#link('@constructor.tsx', 'TSFunction'))
   call add(links, pgmnt#hi#link('@tag.delimiter.tsx', 'TSFunction'))
   call add(links, pgmnt#hi#link('@tag.tsx', 'Special'))
+  call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', 'Type'))
+  call add(links, pgmnt#hi#link('@type.builtin.tsx', 'Special'))
 
   call add(links, pgmnt#hi#link('@type.ruby', 'Constant'))
+  call add(links, pgmnt#hi#link('@type.qualifier.ruby', 'Special'))
 
   call add(links, pgmnt#hi#link('NvimTreeNormal', 'NormalFloat'))
   call add(links, pgmnt#hi#link('AerialNormal', 'NormalFloat'))
