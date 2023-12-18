@@ -574,11 +574,11 @@ function! s:create_colors(palette) abort
         \ }))
 
   " [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-  call extend(rules, pgmnt#hi#group(
-        \ ['TSFunction', 'TSFunctionBuiltin', 'TSFunctionMacro'], {
-        \   'ctermfg': c.pale,
-        \   'guifg': g.pale,
-        \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ ['TSFunction', 'TSFunctionBuiltin', 'TSFunctionMacro'], {
+  "       \   'ctermfg': c.pale,
+  "       \   'guifg': g.pale,
+  "       \ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSMethod'], {
         \   'ctermfg': c.pale,
@@ -1033,7 +1033,7 @@ function! s:create_links() abort
   " call add(links, pgmnt#hi#link('TSOperator', 'icebergNormalFg'))
   call add(links, pgmnt#hi#link('TSParameter', 'String'))
   call add(links, pgmnt#hi#link('TSParameterReference', 'icebergNormalFg'))
-  call add(links, pgmnt#hi#link('TSProperty', 'icebergNormalFg'))
+  " call add(links, pgmnt#hi#link('TSProperty', 'icebergNormalFg'))
   " call add(links, pgmnt#hi#link('TSPunctDelimiter', 'icebergNormalFg'))
   " call add(links, pgmnt#hi#link('TSPunctBracket', 'icebergNormalFg'))
   call add(links, pgmnt#hi#link('TSPunctSpecial', 'Special'))
@@ -1075,6 +1075,10 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('TSPunctDelimiter', 'Operator'))
   call add(links, pgmnt#hi#link('TSPunctBracket', 'Operator'))
   call add(links, pgmnt#hi#link('TSOperator', 'Operator'))
+  call add(links, pgmnt#hi#link('TSFunction', 'Function'))
+  call add(links, pgmnt#hi#link('TSFunctionBuiltin', 'Function'))
+  call add(links, pgmnt#hi#link('TSFunctionMacro', 'Function'))
+  call add(links, pgmnt#hi#link('TSProperty', 'Identifier'))
   call add(links, pgmnt#hi#link('DiagnosticFloatingError', 'Error'))
 
   call add(links, pgmnt#hi#link('@constructor.tsx', 'TSFunction'))
@@ -1085,6 +1089,8 @@ function! s:create_links() abort
 
   call add(links, pgmnt#hi#link('@type.ruby', 'Constant'))
   call add(links, pgmnt#hi#link('@type.qualifier.ruby', 'Special'))
+  call add(links, pgmnt#hi#link('@keyword.function.ruby', 'Special'))
+  call add(links, pgmnt#hi#link('@label.ruby', '@symbol'))
 
   call add(links, pgmnt#hi#link('NvimTreeNormal', 'NormalFloat'))
   call add(links, pgmnt#hi#link('AerialNormal', 'NormalFloat'))

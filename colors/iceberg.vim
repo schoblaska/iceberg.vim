@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-17 20:46-0600
+" Modified:   2023-12-17 21:01-0600
 " License:    MIT
 
 
@@ -102,9 +102,6 @@ if &background == 'light'
   hi SyntasticStyleWarningSign ctermbg=254 ctermfg=130 guibg=#e8e9ec guifg=#c57339
   hi SyntasticWarningSign ctermbg=254 ctermfg=130 guibg=#e8e9ec guifg=#c57339
   hi ZenSpace ctermbg=125 guibg=#cc517a
-  hi TSFunction ctermfg=237 guifg=#505695
-  hi TSFunctionBuiltin ctermfg=237 guifg=#505695
-  hi TSFunctionMacro ctermfg=237 guifg=#505695
   hi TSMethod ctermfg=237 guifg=#505695
   hi TSURI cterm=underline ctermfg=31 gui=underline guifg=#3f83a6 term=underline
   hi DiagnosticUnderlineInfo cterm=underline ctermfg=31 gui=underline guisp=#3f83a6 term=underline
@@ -251,9 +248,6 @@ else
   hi SyntasticStyleWarningSign ctermbg=234 ctermfg=216 guibg=#161821 guifg=#e2a478
   hi SyntasticWarningSign ctermbg=234 ctermfg=216 guibg=#161821 guifg=#e2a478
   hi ZenSpace ctermbg=203 guibg=#e27878
-  hi TSFunction ctermfg=252 guifg=#a3adcb
-  hi TSFunctionBuiltin ctermfg=252 guifg=#a3adcb
-  hi TSFunctionMacro ctermfg=252 guifg=#a3adcb
   hi TSMethod ctermfg=252 guifg=#a3adcb
   hi TSURI cterm=underline ctermfg=109 gui=underline guifg=#89b8c2 term=underline
   hi DiagnosticUnderlineInfo cterm=underline ctermfg=109 gui=underline guisp=#89b8c2 term=underline
@@ -450,7 +444,6 @@ hi! link TSNamespace Statement
 hi! link TSNumber Constant
 hi! link TSParameter String
 hi! link TSParameterReference icebergNormalFg
-hi! link TSProperty icebergNormalFg
 hi! link TSPunctSpecial Special
 hi! link TSRepeat Statement
 hi! link TSString String
@@ -481,6 +474,10 @@ hi! link TabLineSeparatorSel Error
 hi! link TSPunctDelimiter Operator
 hi! link TSPunctBracket Operator
 hi! link TSOperator Operator
+hi! link TSFunction Function
+hi! link TSFunctionBuiltin Function
+hi! link TSFunctionMacro Function
+hi! link TSProperty Identifier
 hi! link DiagnosticFloatingError Error
 hi! link @constructor.tsx TSFunction
 hi! link @tag.delimiter.tsx TSFunction
@@ -489,6 +486,8 @@ hi! link @lsp.type.interface.typescriptreact Type
 hi! link @type.builtin.tsx Special
 hi! link @type.ruby Constant
 hi! link @type.qualifier.ruby Special
+hi! link @keyword.function.ruby Special
+hi! link @label.ruby @symbol
 hi! link NvimTreeNormal NormalFloat
 hi! link AerialNormal NormalFloat
 hi! link AerialNormalNC NormalFloat
