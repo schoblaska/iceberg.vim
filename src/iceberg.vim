@@ -1062,6 +1062,8 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('TabLineSeparatorSel', 'Error'))
 
   call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
+  call add(links, pgmnt#hi#link('@lsp.type.type.typescriptreact', '@symbol'))
+  call add(links, pgmnt#hi#link('@type.tsx', '@symbol'))
   call add(links, pgmnt#hi#link('@constructor.tsx', 'TSFunction'))
   call add(links, pgmnt#hi#link('@tag.delimiter.tsx', 'TSFunction'))
   call add(links, pgmnt#hi#link('@tag.tsx', 'Special'))
