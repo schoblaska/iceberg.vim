@@ -287,12 +287,12 @@ function! s:create_colors(palette) abort
         \   'guifg': 'NONE',
         \   'guisp': g.purple,
         \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'Statement', {
-        \   'ctermfg': c.blue,
-        \   'gui': 'NONE',
-        \   'guifg': g.blue,
-        \ }))
+  " call extend(rules, pgmnt#hi#group(
+  "       \ 'Statement', {
+  "       \   'ctermfg': c.blue,
+  "       \   'gui': 'NONE',
+  "       \   'guifg': g.blue,
+  "       \ }))
   " call extend(rules, pgmnt#hi#group(
   "       \ ['StatusLine', 'StatusLineTerm'], {
   "       \   'cterm': 'reverse',
@@ -697,11 +697,22 @@ function! s:create_colors(palette) abort
         \   'guifg': g.purple,
         \ }))
   call extend(rules, pgmnt#hi#group(
+        \ 'Operator', {
+        \   'ctermfg': c.pale,
+        \   'guifg': g.pale,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
         \ 'VertSplit', {
         \   'cterm': 'NONE',
         \   'ctermfg': c.statuslinenc_bg,
         \   'gui': 'NONE',
         \   'guifg': g.statuslinenc_bg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'Statement', {
+        \   'ctermfg': c.purple,
+        \   'gui': 'NONE',
+        \   'guifg': g.purple,
         \ }))
 
   call extend(rules, pgmnt#hi#group(
@@ -1019,12 +1030,12 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('TSLabel', 'Special'))
   call add(links, pgmnt#hi#link('TSNamespace', 'Statement'))
   call add(links, pgmnt#hi#link('TSNumber', 'Constant'))
-  call add(links, pgmnt#hi#link('TSOperator', 'icebergNormalFg'))
+  " call add(links, pgmnt#hi#link('TSOperator', 'icebergNormalFg'))
   call add(links, pgmnt#hi#link('TSParameter', 'String'))
   call add(links, pgmnt#hi#link('TSParameterReference', 'icebergNormalFg'))
   call add(links, pgmnt#hi#link('TSProperty', 'icebergNormalFg'))
-  call add(links, pgmnt#hi#link('TSPunctDelimiter', 'icebergNormalFg'))
-  call add(links, pgmnt#hi#link('TSPunctBracket', 'icebergNormalFg'))
+  " call add(links, pgmnt#hi#link('TSPunctDelimiter', 'icebergNormalFg'))
+  " call add(links, pgmnt#hi#link('TSPunctBracket', 'icebergNormalFg'))
   call add(links, pgmnt#hi#link('TSPunctSpecial', 'Special'))
   call add(links, pgmnt#hi#link('TSRepeat', 'Statement'))
   call add(links, pgmnt#hi#link('TSString', 'String'))
@@ -1060,6 +1071,11 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('WinSeparator', 'VertSplit'))
   call add(links, pgmnt#hi#link('HlSearchNear', 'IncSearch'))
   call add(links, pgmnt#hi#link('TabLineSeparatorSel', 'Error'))
+
+  call add(links, pgmnt#hi#link('TSPunctDelimiter', 'Operator'))
+  call add(links, pgmnt#hi#link('TSPunctBracket', 'Operator'))
+  call add(links, pgmnt#hi#link('TSOperator', 'Operator'))
+  call add(links, pgmnt#hi#link('DiagnosticFloatingError', 'Error'))
 
   call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', '@symbol'))
   call add(links, pgmnt#hi#link('@lsp.type.type.typescriptreact', '@symbol'))

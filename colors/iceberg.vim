@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-17 20:06-0600
+" Modified:   2023-12-17 20:34-0600
 " License:    MIT
 
 
@@ -62,7 +62,6 @@ if &background == 'light'
   hi SpellCap ctermbg=117 ctermfg=237 gui=undercurl guifg=NONE guisp=#2d539e
   hi SpellLocal ctermbg=116 ctermfg=237 gui=undercurl guifg=NONE guisp=#3f83a6
   hi SpellRare ctermbg=110 ctermfg=237 gui=undercurl guifg=NONE guisp=#7759b4
-  hi Statement ctermfg=25 gui=NONE guifg=#2d539e
   hi StatusLineNC cterm=reverse ctermbg=244 ctermfg=251 gui=reverse guibg=#8b98b6 guifg=#cad0de
   hi StatusLineTermNC cterm=reverse ctermbg=244 ctermfg=251 gui=reverse guibg=#8b98b6 guifg=#cad0de
   hi StorageClass ctermfg=25 guifg=#2d539e
@@ -130,7 +129,9 @@ if &background == 'light'
   hi SignColumn ctermbg=254 ctermfg=248 guibg=#e8e9ec guifg=#9fa7bd
   hi Special ctermfg=97 guifg=#7759b4
   hi Type ctermfg=97 gui=NONE guifg=#7759b4
+  hi Operator ctermfg=237 guifg=#505695
   hi VertSplit cterm=NONE ctermfg=251 gui=NONE guifg=#cad0de
+  hi Statement ctermfg=97 gui=NONE guifg=#7759b4
   hi NormalFloat ctermbg=253 guibg=#f5f6f7
   hi FloatBorder ctermfg=248 guifg=#9fa7bd
   hi LualineEmpty ctermbg=254 ctermfg=254 guibg=#e8e9ec guifg=#e8e9ec
@@ -210,7 +211,6 @@ else
   hi SpellCap ctermbg=24 ctermfg=252 gui=undercurl guifg=NONE guisp=#84a0c6
   hi SpellLocal ctermbg=23 ctermfg=252 gui=undercurl guifg=NONE guisp=#89b8c2
   hi SpellRare ctermbg=97 ctermfg=252 gui=undercurl guifg=NONE guisp=#a093c7
-  hi Statement ctermfg=110 gui=NONE guifg=#84a0c6
   hi StatusLineNC cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
   hi StatusLineTermNC cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
   hi StorageClass ctermfg=110 guifg=#84a0c6
@@ -278,7 +278,9 @@ else
   hi SignColumn ctermbg=234 ctermfg=239 guibg=#161821 guifg=#444b71
   hi Special ctermfg=140 guifg=#a093c7
   hi Type ctermfg=140 gui=NONE guifg=#a093c7
+  hi Operator ctermfg=252 guifg=#a3adcb
   hi VertSplit cterm=NONE ctermfg=233 gui=NONE guifg=#0f1117
+  hi Statement ctermfg=140 gui=NONE guifg=#a093c7
   hi NormalFloat ctermbg=235 guibg=#12141c
   hi FloatBorder ctermfg=239 guifg=#444b71
   hi LualineEmpty ctermbg=234 ctermfg=234 guibg=#161821 guifg=#161821
@@ -446,12 +448,9 @@ hi! link TSKeywordFunction Function
 hi! link TSLabel Special
 hi! link TSNamespace Statement
 hi! link TSNumber Constant
-hi! link TSOperator icebergNormalFg
 hi! link TSParameter String
 hi! link TSParameterReference icebergNormalFg
 hi! link TSProperty icebergNormalFg
-hi! link TSPunctDelimiter icebergNormalFg
-hi! link TSPunctBracket icebergNormalFg
 hi! link TSPunctSpecial Special
 hi! link TSRepeat Statement
 hi! link TSString String
@@ -479,6 +478,10 @@ hi! link typescriptParens icebergNormalFg
 hi! link WinSeparator VertSplit
 hi! link HlSearchNear IncSearch
 hi! link TabLineSeparatorSel Error
+hi! link TSPunctDelimiter Operator
+hi! link TSPunctBracket Operator
+hi! link TSOperator Operator
+hi! link DiagnosticFloatingError Error
 hi! link @lsp.type.interface.typescriptreact @symbol
 hi! link @lsp.type.type.typescriptreact @symbol
 hi! link @type.tsx @symbol
