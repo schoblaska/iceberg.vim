@@ -726,6 +726,14 @@ function! s:create_colors(palette) abort
         \   'guifg': g.linenr_fg,
         \ }))
   call extend(rules, pgmnt#hi#group(
+        \ ['StatusLine', 'StatusLineTerm'], {
+        \   'ctermbg': c.float_bg,
+        \   'ctermfg': c.normal_fg,
+        \   'gui': 'NONE',
+        \   'guibg': g.float_bg,
+        \   'guifg': g.normal_fg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
         \ ['LualineEmpty'], {
         \   'ctermbg': c.normal_bg,
         \   'ctermfg': c.normal_bg,

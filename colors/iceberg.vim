@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2023-12-18 13:16-0600
+" Modified:   2024-01-09 12:18-0500
 " License:    MIT
 
 
@@ -131,6 +131,8 @@ if &background == 'light'
   hi Statement ctermfg=97 gui=NONE guifg=#7759b4
   hi NormalFloat ctermbg=253 guibg=#f5f6f7
   hi FloatBorder ctermfg=248 guifg=#9fa7bd
+  hi StatusLine ctermbg=253 ctermfg=237 gui=NONE guibg=#f5f6f7 guifg=#33374c
+  hi StatusLineTerm ctermbg=253 ctermfg=237 gui=NONE guibg=#f5f6f7 guifg=#33374c
   hi LualineEmpty ctermbg=254 ctermfg=254 guibg=#e8e9ec guifg=#e8e9ec
   hi LualineWinbarFilename ctermbg=253 ctermfg=237 gui=italic guibg=#f5f6f7 guifg=#33374c
   hi TreesitterContextLineNumber ctermbg=253 ctermfg=248 guibg=#f5f6f7 guifg=#9fa7bd
@@ -277,6 +279,8 @@ else
   hi Statement ctermfg=140 gui=NONE guifg=#a093c7
   hi NormalFloat ctermbg=235 guibg=#12141c
   hi FloatBorder ctermfg=239 guifg=#444b71
+  hi StatusLine ctermbg=235 ctermfg=252 gui=NONE guibg=#12141c guifg=#c6c8d1
+  hi StatusLineTerm ctermbg=235 ctermfg=252 gui=NONE guibg=#12141c guifg=#c6c8d1
   hi LualineEmpty ctermbg=234 ctermfg=234 guibg=#161821 guifg=#161821
   hi LualineWinbarFilename ctermbg=235 ctermfg=252 gui=italic guibg=#12141c guifg=#c6c8d1
   hi TreesitterContextLineNumber ctermbg=235 ctermfg=239 guibg=#12141c guifg=#444b71
