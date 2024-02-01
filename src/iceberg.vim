@@ -319,8 +319,8 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'String', {
-        \   'ctermfg': c.lblue,
-        \   'guifg': g.lblue,
+        \   'ctermfg': c.green,
+        \   'guifg': g.green,
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Structure', {
@@ -1089,16 +1089,42 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('TSProperty', 'Identifier'))
   call add(links, pgmnt#hi#link('DiagnosticFloatingError', 'Error'))
 
-  call add(links, pgmnt#hi#link('@constructor.tsx', 'TSFunction'))
-  call add(links, pgmnt#hi#link('@tag.delimiter.tsx', 'TSFunction'))
+  call add(links, pgmnt#hi#link('@constructor.tsx', 'Function'))
+  call add(links, pgmnt#hi#link('@tag.delimiter.tsx', 'Delimiter'))
+  call add(links, pgmnt#hi#link('@tag.attribute.tsx', 'Function'))
   call add(links, pgmnt#hi#link('@tag.tsx', 'Special'))
   call add(links, pgmnt#hi#link('@lsp.type.interface.typescriptreact', 'Type'))
   call add(links, pgmnt#hi#link('@type.builtin.tsx', 'Special'))
+  call add(links, pgmnt#hi#link('@type.tsx', 'Identifier'))
+
+  " call add(links, pgmnt#hi#link('@markup', '??'))
+  call add(links, pgmnt#hi#link('@markup.strong', 'Constant'))
+  call add(links, pgmnt#hi#link('@markup.italic', 'SpellBad'))
+  " call add(links, pgmnt#hi#link('@markup.strikethrough', '??'))
+  " call add(links, pgmnt#hi#link('@markup.underline', '??'))
+
+  call add(links, pgmnt#hi#link('@markup.heading', 'Question'))
+
+  " call add(links, pgmnt#hi#link('@markup.quote', '??'))
+  " call add(links, pgmnt#hi#link('@markup.math', '??'))
+  "
+  call add(links, pgmnt#hi#link('@markup.link', 'Special'))
+  call add(links, pgmnt#hi#link('@markup.link.label', 'Identifier'))
+  call add(links, pgmnt#hi#link('@markup.link.url', 'Special'))
+  "
+  " call add(links, pgmnt#hi#link('@markup.raw', '??'))
+  call add(links, pgmnt#hi#link('@markup.raw.block', 'Function'))
+  "
+  call add(links, pgmnt#hi#link('@markup.list', 'String'))
+  " call add(links, pgmnt#hi#link('@markup.list.checked', '??'))
+  " call add(links, pgmnt#hi#link('@markup.list.unchecked', '??'))
 
   call add(links, pgmnt#hi#link('@type.ruby', 'Constant'))
   call add(links, pgmnt#hi#link('@type.qualifier.ruby', 'Special'))
   call add(links, pgmnt#hi#link('@keyword.function.ruby', 'Special'))
   call add(links, pgmnt#hi#link('@label.ruby', '@symbol'))
+  call add(links, pgmnt#hi#link('@variable.member.ruby', 'Identifier')) " @ivars
+  call add(links, pgmnt#hi#link('@variable.parameter.ruby', 'Identifier')) " @ivars
 
   call add(links, pgmnt#hi#link('NvimTreeNormal', 'NormalFloat'))
   call add(links, pgmnt#hi#link('AerialNormal', 'NormalFloat'))

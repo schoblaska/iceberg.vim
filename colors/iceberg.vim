@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2024-01-09 12:18-0500
+" Modified:   2024-01-31 22:12-0600
 " License:    MIT
 
 
@@ -65,7 +65,7 @@ if &background == 'light'
   hi StatusLineNC cterm=reverse ctermbg=244 ctermfg=251 gui=reverse guibg=#8b98b6 guifg=#cad0de
   hi StatusLineTermNC cterm=reverse ctermbg=244 ctermfg=251 gui=reverse guibg=#8b98b6 guifg=#cad0de
   hi StorageClass ctermfg=25 guifg=#2d539e
-  hi String ctermfg=31 guifg=#3f83a6
+  hi String ctermfg=64 guifg=#668e3d
   hi Structure ctermfg=25 guifg=#2d539e
   hi TabLine cterm=NONE ctermbg=251 ctermfg=244 gui=NONE guibg=#cad0de guifg=#8b98b6
   hi TabLineFill cterm=reverse ctermbg=244 ctermfg=251 gui=reverse guibg=#8b98b6 guifg=#cad0de
@@ -213,7 +213,7 @@ else
   hi StatusLineNC cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
   hi StatusLineTermNC cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
   hi StorageClass ctermfg=110 guifg=#84a0c6
-  hi String ctermfg=109 guifg=#89b8c2
+  hi String ctermfg=150 guifg=#b4be82
   hi Structure ctermfg=110 guifg=#84a0c6
   hi TabLine cterm=NONE ctermbg=233 ctermfg=238 gui=NONE guibg=#0f1117 guifg=#3e445e
   hi TabLineFill cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
@@ -483,15 +483,27 @@ hi! link TSFunctionBuiltin Function
 hi! link TSFunctionMacro Function
 hi! link TSProperty Identifier
 hi! link DiagnosticFloatingError Error
-hi! link @constructor.tsx TSFunction
-hi! link @tag.delimiter.tsx TSFunction
+hi! link @constructor.tsx Function
+hi! link @tag.delimiter.tsx Delimiter
+hi! link @tag.attribute.tsx Function
 hi! link @tag.tsx Special
 hi! link @lsp.type.interface.typescriptreact Type
 hi! link @type.builtin.tsx Special
+hi! link @type.tsx Identifier
+hi! link @markup.strong Constant
+hi! link @markup.italic SpellBad
+hi! link @markup.heading Question
+hi! link @markup.link Special
+hi! link @markup.link.label Identifier
+hi! link @markup.link.url Special
+hi! link @markup.raw.block Function
+hi! link @markup.list String
 hi! link @type.ruby Constant
 hi! link @type.qualifier.ruby Special
 hi! link @keyword.function.ruby Special
 hi! link @label.ruby @symbol
+hi! link @variable.member.ruby Identifier
+hi! link @variable.parameter.ruby Identifier
 hi! link NvimTreeNormal NormalFloat
 hi! link AerialNormal NormalFloat
 hi! link AerialNormalNC NormalFloat
