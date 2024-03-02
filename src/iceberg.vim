@@ -1097,6 +1097,7 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('@type.builtin.tsx', 'Special'))
   call add(links, pgmnt#hi#link('@type.tsx', 'Identifier'))
 
+
   " call add(links, pgmnt#hi#link('@markup', '??'))
   call add(links, pgmnt#hi#link('@markup.strong', 'Constant'))
   call add(links, pgmnt#hi#link('@markup.italic', 'SpellBad'))
@@ -1118,6 +1119,37 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('@markup.list', 'String'))
   " call add(links, pgmnt#hi#link('@markup.list.checked', '??'))
   " call add(links, pgmnt#hi#link('@markup.list.unchecked', '??'))
+
+
+"     NavicText               = { fg = spec.fg1 },
+"     NavicSeparator          = { fg = spec.bg4 },
+"
+"     NavicIconsFile          = { link = "Directory" },
+"     NavicIconsModule        = { link = has_ts and "@namespace" or "Identifier" },
+"     NavicIconsNamespace     = { link = has_ts and "@namespace" or "Identifier" },
+"     NavicIconsPackage       = { link = has_ts and "@namespace" or "Identifier" },
+"     NavicIconsClass         = { link = "Type" },
+"     NavicIconsMethod        = { link = "Function" },
+"     NavicIconsProperty      = { link = has_ts and "@property" or "Identifier" },
+"     NavicIconsField         = { link = has_ts and "@field" or "Identifier" },
+"     NavicIconsConstructor   = { link = "Function" },
+"     NavicIconsEnum          = { link = "Constant" },
+"     NavicIconsInterface     = { link = "Constant" },
+"     NavicIconsFunction      = { link = "Function" },
+"     NavicIconsVariable      = { link = has_ts and "@variable" or "Identifier" },
+"     NavicIconsConstant      = { link = "Constant" },
+"     NavicIconsString        = { link = "String" },
+"     NavicIconsNumber        = { link = "Number" },
+"     NavicIconsBoolean       = { link = "Boolean" },
+"     NavicIconsObject        = { link = has_ts and "@namespace" or "Identifier" },
+"     NavicIconsKey           = { link = "Identifier" },
+"     NavicIconsNull          = { link = "Type" },
+"     NavicIconsEnumMember    = { link = has_ts and "@field" or "Identifier" },
+"     NavicIconsStruct        = { link = "Type" },
+"     NavicIconsEvent         = { link = "Constant" },
+"     NagicIconsOperator      = { link = "Operator" },
+"     NavicIconsTypeParameter = { link = has_ts and "@field" or "Identifier" },
+
 
   call add(links, pgmnt#hi#link('@type.ruby', 'Constant'))
   call add(links, pgmnt#hi#link('@type.qualifier.ruby', 'Special'))
